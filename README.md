@@ -36,3 +36,7 @@ Es javascript que se ejecuta en el servidor, usa el motor V8 de Google
 - Walmart
 - Uber
 - Nasa
+
+> Nodejs usa una conducción por eventos que nose bloquean en las entradas y salidas al conectarse con el servidor.
+
+## **Non-Blocking I/O**
