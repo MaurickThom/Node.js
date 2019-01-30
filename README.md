@@ -10,5 +10,14 @@ En este esquema, la capa superior usa varios servicios definidos por la capa inf
 
 La parte mas dura de la arquitectura por capas es decidir que capas tener y que responsabilidad deberian tener cada una.
 
-#### **Confusión entre capa lógica y  capa física**
+## **¿Qué es nodejs?**
 
+Es javascript que se ejecuta en el servidor, usa el motor V8 de Google
+
+## **¿Por qué es tan popular?**
+
+## **¿Qué puedo hacer con Node?**
+
+Uso de socket para una comucación real Cliente-Servidor
+
+## **¿Quienes lo usan?**
