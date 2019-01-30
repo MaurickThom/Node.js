@@ -18,7 +18,7 @@ Es javascript que se ejecuta en el servidor, usa el motor V8 de Google
 
 - Entradas simultaneas que no realizan bloqueos al servidor(peticiones asincronas)
 - Es sumamente rápido y fácil de configurar
-- Más de 470 mil paquetes disponibles
+- Más de 470 mil paquetes disponibles(el ecosistema con más librerías en el mundo)
 
 ## **¿Qué puedo hacer con Node?**
 
@@ -29,3 +29,10 @@ Es javascript que se ejecuta en el servidor, usa el motor V8 de Google
 - Creacion de servicios REST en segundos
 
 ## **¿Quienes lo usan?**
+
+- Netflix
+- Paypal
+- Linkedin
+- Walmart
+- Uber
+- Nasa
