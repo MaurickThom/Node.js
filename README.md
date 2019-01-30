@@ -19,5 +19,9 @@ Es javascript que se ejecuta en el servidor, usa el motor V8 de Google
 ## **¿Qué puedo hacer con Node?**
 
 Uso de socket para una comucación real Cliente-Servidor
+Manejo de archivos en FileSystem , cargas simultáneas
+Servidores locales y remotos con información en tiempo real
+Conexiones a bases de datos
+Creacion de servicios REST en segundos
 
 ## **¿Quienes lo usan?**
