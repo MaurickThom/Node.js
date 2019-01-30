@@ -72,5 +72,17 @@ Es javascript que se ejecuta en el servidor, usa el motor V8 de Google
 **Modelo asincronico(Non-blocking) :**
 
 ```javascript
-    
+    let {getUsuarios} = require('./usuarios/usuario')
+
+    console.log('Inicio de programa')
+
+    getUsuariosSync(1,(usuario1)=>{
+        console.log(usuario1)
+    })
+
+    getUsuariosSync(2,(usuario2)=>{
+        console.log(usuario2)
+    })
+
+    console.log('Hola mundo !!')
 ```
