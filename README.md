@@ -42,8 +42,13 @@ Es javascript que se ejecuta en el servidor, usa el motor V8 de Google
 ## **Ciclo de vida de un proceso**
 
 1.- Pila de procesos (Request & Response)
-2.- Pila de procesos (Request & Response)
-3.- Pila de procesos (Request & Response)
+
+2.- Pila de subprocesos (Async & Request)
+
+3.- Cola de Callbacks (Async & Response)
+
+![Imagen de JonMircha](https://github.com/jonmircha/edfullstackjs-2018/raw/master/assets/event-loop.png)
 
 ## **Blocking vs Non-Blocking I/O**
 
+[Funtes](https://github.com/jonmircha/edfullstackjs-2018/tree/master/Node)
