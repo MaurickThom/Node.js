@@ -37,7 +37,7 @@ Es javascript que se ejecuta en el servidor, usa el motor V8 de Google
 - Uber
 - Nasa
 
-> Nodejs usa una conducción por eventos que nose bloquean en las entradas y salidas al conectarse con el servidor.
+> Nodejs usa una conducción por eventos que no se bloquean en las entradas y salidas al conectarse con el servidor.
 
 ## **Ciclo de vida de un proceso**
 
@@ -51,4 +51,4 @@ Es javascript que se ejecuta en el servidor, usa el motor V8 de Google
 
 ## **Blocking vs Non-Blocking I/O**
 
-[Funtes](https://github.com/jonmircha/edfullstackjs-2018/tree/master/Node)
+[Fuentes](https://github.com/jonmircha/edfullstackjs-2018/tree/master/Node)
