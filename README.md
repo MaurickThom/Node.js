@@ -69,6 +69,16 @@ Es javascript que se ejecuta en el servidor, usa el motor V8 de Google
     console.log('Hola mundo !!')
 ```
 
+***Output***
+
+```sh
+    $ node sincronico
+    > Inicio de programa
+    > Usuario1 : {id: 1, nombre: 'Usuario1'}
+    > Usuario2 : {id: 2, nombre: 'Usuario2'}
+    > Hola mundo !!
+```
+
 **Modelo asincronico(Non-blocking) :**
 
 ```javascript
@@ -85,4 +95,14 @@ Es javascript que se ejecuta en el servidor, usa el motor V8 de Google
     })
 
     console.log('Hola mundo !!')
+```
+
+***Output***
+
+```sh
+    $ node asincronico
+    > Inicio de programa
+    > Hola mundo !!
+    > Usuario1 : {id: 1, nombre: 'Usuario1'}
+    > Usuario2 : {id: 2, nombre: 'Usuario2'}
 ```
