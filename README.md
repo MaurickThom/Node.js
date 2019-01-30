@@ -39,4 +39,11 @@ Es javascript que se ejecuta en el servidor, usa el motor V8 de Google
 
 > Nodejs usa una conducción por eventos que nose bloquean en las entradas y salidas al conectarse con el servidor.
 
-## **Non-Blocking I/O**
+## **Ciclo de vida de un proceso**
+
+1.- Pila de procesos (Request & Response)
+2.- Pila de procesos (Request & Response)
+3.- Pila de procesos (Request & Response)
+
+## **Blocking vs Non-Blocking I/O**
+
