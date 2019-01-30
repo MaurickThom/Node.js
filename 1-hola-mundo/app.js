@@ -1,2 +1,2 @@
 let  name = 'Thom'
-console.log(`Hola ${name}`)
+console.log(`Hello ${name}`)
