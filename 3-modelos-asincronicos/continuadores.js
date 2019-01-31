@@ -20,3 +20,8 @@ div(8,0,(err,data=0)=>{
     if(err) console.log(err);
     else console.log(data);
 })
+
+div(8,3,(err,data=0)=>{
+    if(err) console.log(err);
+    else console.log(data);
+})
