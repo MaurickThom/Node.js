@@ -9,4 +9,4 @@ aFunction(3,(value,result)=>{
     console.log(`Value ${value} result ${result}`);
 })
 
-console.log('Terminado?')
+console.log('finish?')
