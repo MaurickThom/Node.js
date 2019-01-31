@@ -10,3 +10,5 @@ setTimeout(() => {
 setTimeout(() => {
     console.log('Tercer timeout');
 }, 0);
+
+console.log('Fin del programa');

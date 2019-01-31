@@ -106,3 +106,9 @@ Es javascript que se ejecuta en el servidor, usa el motor V8 de Google
     > Usuario1 : {id: 1, nombre: 'Usuario1'}
     > Usuario2 : {id: 2, nombre: 'Usuario2'}
 ```
+
+## **Procesos dentro de NodeJS**
+
+- Call stack
+- Node Apis
+- Cola de callbacks
