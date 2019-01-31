@@ -120,7 +120,7 @@ Es javascript que se ejecuta en el servidor, usa el motor V8 de Google
 
 El principal problema de la programación asíncrona es como dar continuidad a las operaciones no bloqueantes del algoritmo una vez que éstas han terminado su ejecución.
 
-Para dar respuesta al tratamiento de continuidad al resultado al resultado de las operaciones no bloqueantes una vez que éstas han terminado , se han establecido modelos para tratarlos como programación sincrónica.
+Para dar respuesta al tratamiento de continuidad al resultado de las operaciones no bloqueantes una vez que éstas han terminado , se han establecido modelos para tratarlos como programación sincrónica.
 
 ### **Modelo de paso de continuadores**
 
