@@ -117,3 +117,23 @@ Es javascript que se ejecuta en el servidor, usa el motor V8 de Google
 ![Javascript](https://www.oreilly.com/library/view/learning-nodejs-development/9781788395540/assets/74fbf540-71b8-499a-a7cf-2da14ed034de.jpg)
 
 ## **Modelos de programación asíncrona**
+
+El principal problema de la programación asíncrona es como dar continuidad a las operaciones no bloqueantes del algoritmo una vez que éstas han terminado su ejecución.
+
+Para dar respuesta al tratamiento de continuidad al resultado al resultado de las operaciones no bloqueantes una vez que éstas han terminado , se han establecido modelos para tratarlos como programación sincrónica.
+
+### **Modelo de paso de continuadores**
+
+Este modelo es el mas recurrente en NodeJS. Cada función recibe información acerca de cómo debe tratar al resultado(de éxito o error) de cada operación.Requiere orden superior.
+
+### **Modelo de eventos**
+
+Se utiliza una arquitectura dirigida por eventos que permite a las operaciones no bloqueantes informar de su termianción mediante señales de éxito o fracaso. Requiere correlación para sincronizar.
+
+### **Modelo de promesas**
+
+Se razona con los valores de retorno de las operaciones no bloqueantes de manera independiente del momento del tiempo en que dichos valores se obtengan.
+
+### **Modelo de generadores**
+
+Se utilizan generadores
