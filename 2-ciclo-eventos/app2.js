@@ -2,7 +2,7 @@ console.log('Inicio de programa')
 
 setTimeout(() => {
     console.log('Primer Timeout')
-}, 3000);
+}, 30);
 
 setTimeout(() => {
     console.log('Segundo timeout');
