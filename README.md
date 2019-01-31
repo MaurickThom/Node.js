@@ -110,5 +110,7 @@ Es javascript que se ejecuta en el servidor, usa el motor V8 de Google
 ## **Procesos dentro de NodeJS**
 
 - Call stack
-- Node Apis
+- Node Api's
 - Cola de callbacks
+
+![Javascript](img/javascript.png)
