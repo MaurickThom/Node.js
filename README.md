@@ -136,4 +136,6 @@ Se razona con los valores de retorno de las operaciones no bloqueantes de manera
 
 ### **Modelo de generadores**
 
-Se utilizan generadores
+Se utilizan generadores para dvolver temporalmente el control al programa llamante y retornar en un momento posterior a la rutina restaurando el estado en el punto que se abandono su ejecucion.
+
+[Mas sobre este tema](https://www.todojs.com/programacion-asincrona-paso-de-continuadores-eventos-promesas-y-generadores/)
