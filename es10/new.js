@@ -19,3 +19,16 @@ console.log(arr.flat(1));
 console.log(arr.flat(2));
 console.log(arr.flat(3));
 console.log(arr.flat(4));
+
+const res = arr.map(x=>[x,x*2])
+console.log(res);
+console.log(arr.flatMap(x=>[x,x*2]))
+
+// const myObject = {
+//     key_1 : 'value1',
+//     key_2 : 'value2',
+//     key_3 : 'value3'
+// }
+// const entries = Object.entries(myObject)
+// console.log(entries)
+// const originalObject = Object.fromEntries(entries) // convertir un array a objeto literal
