@@ -1,0 +1,1 @@
+//iterador : un objeto que contiene un metodo next , este next es un un objeto que contiene dos parametros (value,done)
