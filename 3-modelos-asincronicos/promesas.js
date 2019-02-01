@@ -3,6 +3,18 @@
  *  ya sea una respuesta de Ok o la razon por que no hay respuesta
  * 
  * Una promesa puede estar en uno de los 3 estados posibles : cumplida(resuelta),rechazada o pendiente
+ * 
+ * Lo mas interesante es que el callback que se pasa a la promesa son llamados incluso antes 
+ * de que el constructor de la Promesa devulva el objeto creado
+ * 
+ * La promesa es un proxy para un valor no necesariamente conocido en el momento que es creada
+ *  la promesa.Permite asociar manejadores que actuaran asincronicamente sobre un eventual
+ *  valor en caso de exito, o falla:
+ * 
+ * Estados :
+ * -Pendiente 
+ *  Cumplida 
+ *  rechzada   
 */
 let promesa = new Promise((resolve, reject) => {
     if(true) resolve('Ok')
@@ -17,7 +29,7 @@ let newpromesa = new Promise((resolve, reject) => {
     console.log('Inicio de promesa ... ');
     setTimeout(() => {
         resolve('Resuelto')
-    }, 2000);
+    }, 4000);
     setTimeout(() => {
         reject('Rechazado')
     }, 3000);
@@ -31,7 +43,7 @@ newpromesa
 
 // Promise.All -- nos retorna un arreglo con los valores de las promesas
 let promise_1 = new Promise((resolve,reject)=>{
-    resolve('Primera promesa resulta')
+    reject('Primera promesa rechazada')
 })
 let promise_2 = new Promise((resolve,reject)=>{
     setTimeout(() => {
