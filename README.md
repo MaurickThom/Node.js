@@ -145,3 +145,7 @@ Se utilizan generadores para dvolver temporalmente el control al programa llaman
 ```sh
     $npm install -g nodemon
 ```
+
+> Nodemon es una herramienta  que ayuda a desarrollar aplicaciones basadas en nodejs .
+
+> Reiniciando automaticamente la aplicacion de node cuando se detectan cambios en el directorio
