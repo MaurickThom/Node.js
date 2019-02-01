@@ -1,3 +1,5 @@
+//Callback hell 
+//Modelo de programación asíncrona de paso por continuadores
 let empleados = [{
     id: 1,
     nombre: 'Fernando'
