@@ -149,3 +149,19 @@ Se utilizan generadores para dvolver temporalmente el control al programa llaman
 > Nodemon es una herramienta  que ayuda a desarrollar aplicaciones basadas en nodejs .
 
 > Reiniciando automaticamente la aplicacion de node cuando se detectan cambios en el directorio
+
+```javascript
+    // destructuración de objetos
+
+    let deadpool = {
+        nombre : 'Wade',
+        apellido : 'Wilson',
+        poder : 'regeneración'
+    }
+
+    // let {nombre,apellido,poder} = deadpool;
+    // console.log(nombre,apellido,poder);
+
+    let {nombre: nom,apellido : ape,poder : po} = deadpool;
+    console.log(nom,ape,po);
+```
