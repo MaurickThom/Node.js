@@ -34,6 +34,7 @@ const getSalario = (data, callback) => {
     })
 }
 
+//Aquí comienza el callback hell
 getEmpleado(2, (err, data) => {
     if (err) return console.log(err)
     getSalario(data,(err,dat)=>{
