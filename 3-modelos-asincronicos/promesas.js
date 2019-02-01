@@ -5,7 +5,7 @@
  * Una promesa puede estar en uno de los 3 estados posibles : cumplida(resuelta),rechazada o pendiente
 */
 let promesa = new Promise((resolve, reject) => {
-    if(false) resolve('Ok')
+    if(true) resolve('Ok')
     else reject('No')
 })
 
@@ -27,3 +27,18 @@ let newpromesa = new Promise((resolve, reject) => {
 newpromesa
 .then(resolve=>console.log(resolve))
 .catch(err=>console.log(err))
+
+
+// Promise.All -- nos retorna un arreglo con los valores de las promesas
+let promise_1 = new Promise((resolve,reject)=>{
+    resolve('Primera promesa resulta')
+})
+let promise_2 = new Promise((resolve,reject)=>{
+    setTimeout(() => {
+        resolve('Segunda promesa resulta') 
+    }, 3000);
+})
+
+Promise.all([promise_1,promise_2])
+.then(values=>console.log(`Los valores son ${values}`))
+.catch(err=>console.log(`Ocurrio un error ${err}`))
