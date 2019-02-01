@@ -11,6 +11,7 @@ const iterador = (arr)=>{
 }
 
 let objIterator = iterador(colores)
+// console.log(objIterator);
 console.log(objIterator.next());
 console.log(objIterator.next());
 console.log(objIterator.next());
