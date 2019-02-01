@@ -35,9 +35,10 @@ const getSalario = (data, callback) => {
     })
 }
 
-getEmpleado(1, (err, data) => {
+getEmpleado(10, (err, data) => {
     if (err) return console.log(err)
     getSalario(data,(err,dat)=>{
         if(err) return console.log(err)
+        console.log(dat)
     })
 })
