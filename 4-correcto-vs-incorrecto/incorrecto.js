@@ -26,11 +26,18 @@ const getEmpleado = (id, callback) => {
         callback(null, empleadoDB)
     }
 }
-const getSalario = (empleado, callback) => {
-
+const getSalario = (data, callback) => {
+    let salarioDB = salarios.find(salarioObject=>salaraObject.id === data.id)
+    if(!salarioDB) callback(`No se encontró el salario para la persona ${data.nombre}`)
+    else  callback(null,new {
+        nombre : data.nombre,
+        salario : salarioDB.salario
+    })
 }
 
 getEmpleado(1, (err, data) => {
     if (err) return console.log(err)
-    console.log(data)
+    getSalario(data,(err,dat)=>{
+        if(err) return console.log(err)
+    })
 })
