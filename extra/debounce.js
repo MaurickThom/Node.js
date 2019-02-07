@@ -33,7 +33,7 @@ function debounce(callback,tiempo) {
 		console.log(context)
 		console.log(args)
 		timeoutId = setTimeout(() => {
-			callback.apply(context,args)
+			callback.apply(this,arguments)
 		},tiempo)
 	}
 }
