@@ -3,7 +3,7 @@ const alertar = (nombre,apellido)=>{
     if(timeOutId){
         clearTimeout(timeOutId)
     }
-    setTimeout(()=>{
+    timeOutId = setTimeout(()=>{
         console.log(`${nombre} ${apellido}`)
     },1000)
 }
