@@ -165,3 +165,8 @@ Se utilizan generadores para dvolver temporalmente el control al programa llaman
     let {nombre: nom,apellido : ape,poder : po} = deadpool;
     console.log(nom,ape,po);
 ```
+
+## **Event Loop**
+
+> Javascript poseé un modelo de concurrencia basado en un 'loop de eventos' .Este <br>
+> modelo es bastante diferente al modelo de otros lenguajes como c o java.
