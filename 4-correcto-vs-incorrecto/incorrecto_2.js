@@ -34,8 +34,8 @@ const getUsuarios = (id, callback) => {
 	callback(null, usuarioDB)
 }
 const getProfesion = (data, callback) => {
-	data.profesion_id.filter((element,i)=> {
-		if (!profesion[i]) {
+	data.profesion_id.filter((element)=> {
+		if (!profesion[element]) {
 			return callback(`Error No encontrado la profesioncon este ID : ${i}`)
 		}
 	})
