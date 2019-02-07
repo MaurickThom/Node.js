@@ -32,14 +32,14 @@ function debounce(callback,tiempo) {
 		const args = arguments
 		console.log(context)
 		console.log(args)
-		setTimeout(() => {
+		timeoutId = setTimeout(() => {
 			callback.apply(context,args)
 		},tiempo)
 	}
 }
-const alertarDebounce = debounce(alertar)
+const alertarDebounce = debounce(alertar,1000)
 document.getElementById('btn')
 	.addEventListener('click',e=>{
 		e.preventDefault()
-		alertarDebounce('Thom','Roman',1000)
+		alertarDebounce('Thom','Roman')
 	})
