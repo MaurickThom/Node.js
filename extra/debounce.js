@@ -1,4 +1,6 @@
-
+/**
+ * La palabra this se conporta de una manera muy peculiar en javascript, a diferencia de otros lenguajes la palabra this se comporta DE DIFERENTE manera dependiendo del contexto en javascript
+ */
 const alertar = (nombre,apellido)=>{
     timeOutId = setTimeout(()=>{
         console.log(`${nombre} ${apellido}`)
