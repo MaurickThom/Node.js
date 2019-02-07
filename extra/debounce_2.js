@@ -4,6 +4,7 @@ console.log(words)
 const input = document.getElementById('input')
 const content_ = document.getElementById('js-result')
 const renderResult = (letter)=>{
+    console.log('...')
     const result = words
     .filter(word=>{
         if(word.toLowerCase().match(`.*${letter.toLowerCase().trim()}.*`)) return word;
@@ -14,15 +15,15 @@ const renderResult = (letter)=>{
 }
 const debounce = (callback,time)=>{
     let timeoutId
-    if(timeoutId) clearTimeout(timeoutId)
     return function(){
+        if(timeoutId) clearTimeout(timeoutId)
         timeoutId=setTimeout(()=>{
             callback.apply(this,arguments)
         },time)
     }
 }
-const triggerContent = debounce(renderResult,100)
-renderResult('')
+const triggerContent = debounce(renderResult,1000)
+// renderResult('')
 input.addEventListener('keyup',e=>{
     triggerContent(e.target.value)
 })
