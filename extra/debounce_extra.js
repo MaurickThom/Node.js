@@ -32,7 +32,7 @@ const debounce = (callback,time)=>{
 		},time)
 	}
 }
-const triggerAlert = debounce(myAlert,1000)
+const triggerAlert = debounce(myAlert,100)
 document.getElementById('btn')
 	.addEventListener('click',e=>{
 		e.preventDefault()
