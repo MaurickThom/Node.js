@@ -23,7 +23,8 @@ const usuarios = [
 const profesion = {
 	1: 'programador',
 	2: 'diseñador',
-	3: 'Cocinero'
+	3: 'Cocinero',
+	4:'Chef'
 }
 
 // mostrar usuarios con id 
@@ -33,17 +34,16 @@ const getUsuarios = (id, callback) => {
 	callback(null, usuarioDB)
 }
 const getProfesion = (data, callback) => {
-	let arrData = data.profesion_id.slice()
-	for (let i = 0; i < arrData.length; i++) {
-		if (!profesion[arrData[i]]) {
-			return callback(`Error No encontrado la profesioncon este ID : ${arrData[i]}`)
+	data.profesion_id.filter((element,i)=> {
+		if (!profesion[i]) {
+			return callback(`Error No encontrado la profesioncon este ID : ${i}`)
 		}
-	}
+	})
 	const {id,nombre} = data
 	callback(null, {
 		id,
 		nombre,
-		profesiones: arrData.map(pro => profesion[pro])
+		profesiones: data.profesion_id.map(pro => profesion[pro])
 	})
 }
 
@@ -59,18 +59,16 @@ getUsuarios(3, (err, data) => {
 const getUsersIDProfesion = (idProfesion,callback)=>{
 	if(!profesion[idProfesion]) return callback(`No existe ese id de profesion`)
 	let arrProf = []
-	
 	usuarios.forEach(user=>{
 		user.profesion_id.forEach(element=>{
 				if(idProfesion===element) arrProf.push(user)
 		})
 	})
-	if(arrProf.length){
-		return callback(null,arrProf)
-	}
+	if(arrProf.length) return callback(null,arrProf)
+	return callback(`Este id existe pero ningun usuario lo ejerce`)
 }
 // usuarios.forEach((user,index)=>console.log(user,index))
-getUsersIDProfesion(3,(err,data)=>{
+getUsersIDProfesion(4,(err,data)=>{
 	if(err) return console.log(err)
 	return console.log(data)
 })
