@@ -22,8 +22,8 @@ const debounce = (callback,time)=>{
         },time)
     }
 }
-const triggerContent = debounce(renderResult,1000)
-// renderResult('')
+const triggerContent = debounce(renderResult,500)
+renderResult('')
 input.addEventListener('keyup',e=>{
     triggerContent(e.target.value)
 })
