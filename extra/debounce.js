@@ -8,19 +8,38 @@
  * 
  * La palabra this dentro de una funcion depende de como es llamada
  */
-const alertar = (nombre,apellido)=>{
-    timeOutId = setTimeout(()=>{
-        console.log(`${nombre} ${apellido}`)
-    },1000)
+// let timeOutId 
+// const alertar = (nombre,apellido)=>{
+//     if(timeOutId) clearTimeout(timeOutId)
+//     timeOutId = setTimeout(()=>{
+//         console.log(`${nombre} ${apellido}`)
+//     },1000)
+// }
+
+// document.getElementById('btn').addEventListener('click',e=>{
+//     e.preventDefault()
+//     alertar('Thom','Roman')
+// })
+function alertar(nombre, apellido) {
+	alert(`Hola ${nombre} ${apellido}`)
 }
-const debounce=(callback)=>{
-    let timeOutId 
-    return ()=>{
-        if(timeOutId) clearTimeout(timeOutId)
-        const context= this
-    }
+
+function debounce(callback,tiempo) {
+	let timeoutId
+	return function () {
+		if (timeoutId) clearTimeout(timeoutId)
+		const context = this
+		const args = arguments
+		console.log(context)
+		console.log(args)
+		setTimeout(() => {
+			callback.apply(context,args)
+		},tiempo)
+	}
 }
-document.getElementById('btn').addEventListener('click',e=>{
-    e.preventDefault()
-    alertar('Thom','Roman')
-})
+const alertarDebounce = debounce(alertar)
+document.getElementById('btn')
+	.addEventListener('click',e=>{
+		e.preventDefault()
+		alertarDebounce('Thom','Roman',1000)
+	})
