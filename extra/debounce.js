@@ -1,8 +1,6 @@
 let timeOutId 
 const alertar = (nombre,apellido)=>{
-    if(timeOutId){
-        clearTimeout(timeOutId)
-    }
+    if(timeOutId) clearTimeout(timeOutId)
     timeOutId = setTimeout(()=>{
         console.log(`${nombre} ${apellido}`)
     },1000)
