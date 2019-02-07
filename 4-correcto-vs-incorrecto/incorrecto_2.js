@@ -55,4 +55,22 @@ getUsuarios(3, (err, data) => {
 	})
 })
 
-//mostrar a todos los usuarios que tengan ese id profesion
+// mostrar a todos los usuarios que tengan ese id profesion
+const getUsersIDProfesion = (idProfesion,callback)=>{
+	if(!profesion[idProfesion]) return callback(`No existe ese id de profesion`)
+	let arrProf = []
+	
+	usuarios.forEach(user=>{
+		user.profesion_id.forEach(element=>{
+				if(idProfesion===element) arrProf.push(user)
+		})
+	})
+	if(arrProf.length){
+		return callback(null,arrProf)
+	}
+}
+// usuarios.forEach((user,index)=>console.log(user,index))
+getUsersIDProfesion(3,(err,data)=>{
+	if(err) return console.log(err)
+	return console.log(data)
+})
