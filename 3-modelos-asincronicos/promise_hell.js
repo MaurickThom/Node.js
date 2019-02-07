@@ -1,0 +1,1 @@
+const wait = numberTime =>new Promise(res=>setTimeout(res,numberTime))
