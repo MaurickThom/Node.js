@@ -1,4 +1,5 @@
-const usuarios = [{
+const usuarios = [
+	{
 		id: 1,
 		nombre: 'thom',
 		profesion_id: [1, 7]
@@ -46,11 +47,12 @@ const getProfesion = (data, callback) => {
 	})
 }
 
-getUsuarios(4, (err, data) => {
+getUsuarios(3, (err, data) => {
 	if (err) return console.log(err)
 	getProfesion(data, (err, data) => {
 		if (err) return console.log(err)
 		console.log(data)
 	})
 })
+
 //mostrar a todos los usuarios que tengan ese id profesion
