@@ -170,3 +170,14 @@ Se utilizan generadores para dvolver temporalmente el control al programa llaman
 
 > Javascript poseé un modelo de concurrencia basado en un 'loop de eventos' .Este <br>
 > modelo es bastante diferente al modelo de otros lenguajes como c o java.
+
+
+**Para usar fetch en Nodejs :**
+
+```sh
+    $npm install node-fetch -g
+```
+
+```sh
+    $npm install node-fetch --save-dev
+```

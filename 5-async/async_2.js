@@ -1,3 +1,5 @@
+const fetch = require('node-fetch')
+
 const getName = (username)=>{
     const URL = `http://api.github.com/users/${username}`
     fetch(URL)
