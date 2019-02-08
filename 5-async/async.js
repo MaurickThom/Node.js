@@ -6,3 +6,11 @@ const sumAll = () => {
       .then(response => sumAfterTwoSeconds(response, 2)))
 }
 sumAll().then(data => console.log(data))
+
+// Usando Async Await
+const asyncSumAll = async ()=>{
+	const four = await sumAfterTwoSeconds(2,2)
+	const six = await sumAfterTwoSeconds(four,2)
+	return await sumAfterTwoSeconds(six,2)
+}
+asyncSumAll().then(total=>console.log(total))

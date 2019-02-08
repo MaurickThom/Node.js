@@ -1,5 +1,5 @@
 // Version promise hell
-const wait = numberTime =>new Promise(resolve=>setTimeout(resolve,numberTime))
+const wait = numberTime =>new Promise(resolve=>setTimeout(resolve(),numberTime))
 const log = console.log.bind(console)
 
 const dummy  = payload =>wait(1000).then(()=>payload)
