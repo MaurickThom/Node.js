@@ -46,7 +46,7 @@ const getSalario = (empleado) => {
 //             },err=>console.log(err))
 //     },err=>console.log(err))
 
-//Resulto con async await
+//Resultado con async await
 const fetchResult = async(id)=>{
     const response = await getEmpleado(id)
     const data = await getSalario(response)
