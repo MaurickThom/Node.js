@@ -235,7 +235,7 @@ Esto es mucha utilidad para las promesas hell
 
 ```javascript
     // Al colocar la palabra async indirectamente retornamos una promesa
-    const getNombre = async ()=>{
+    const getName = async ()=>{
         return 'thom'
     }
 
