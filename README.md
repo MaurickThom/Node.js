@@ -56,20 +56,20 @@ Es javascript que se ejecuta en el servidor, usa el motor V8 de Google
 **Modelo sincronico(Blocking) :**
 
 ```javascript
-    let {getUsuarios} = require('./usuarios/usuario')
+let { getUsuarios } = require("./usuarios/usuario");
 
-    console.log('Inicio de programa')
+console.log("Inicio de programa");
 
-    let usuario1 = getUsuariosSync(1)
-    console.log('Usuario1 : ',usuario1)
+let usuario1 = getUsuariosSync(1);
+console.log("Usuario1 : ", usuario1);
 
-    let usuario2 = getUsuariosSync(2)
-    console.log('Usuario2 : ',usuario2)
+let usuario2 = getUsuariosSync(2);
+console.log("Usuario2 : ", usuario2);
 
-    console.log('Hola mundo !!')
+console.log("Hola mundo !!");
 ```
 
-***Output***
+**_Output_**
 
 ```sh
     $ node sincronico
@@ -82,22 +82,22 @@ Es javascript que se ejecuta en el servidor, usa el motor V8 de Google
 **Modelo asincronico(Non-blocking) :**
 
 ```javascript
-    let {getUsuarios} = require('./usuarios/usuario')
+let { getUsuarios } = require("./usuarios/usuario");
 
-    console.log('Inicio de programa')
+console.log("Inicio de programa");
 
-    getUsuarios(1,(usuario1)=>{
-        console.log(usuario1)
-    })
+getUsuarios(1, usuario1 => {
+  console.log(usuario1);
+});
 
-    getUsuarios(2,(usuario2)=>{
-        console.log(usuario2)
-    })
+getUsuarios(2, usuario2 => {
+  console.log(usuario2);
+});
 
-    console.log('Hola mundo !!')
+console.log("Hola mundo !!");
 ```
 
-***Output***
+**_Output_**
 
 ```sh
     $ node asincronico
@@ -146,31 +146,30 @@ Se utilizan generadores para dvolver temporalmente el control al programa llaman
     $npm install -g nodemon
 ```
 
-> Nodemon es una herramienta  que ayuda a desarrollar aplicaciones basadas en nodejs .
+> Nodemon es una herramienta que ayuda a desarrollar aplicaciones basadas en nodejs .
 
 > Reiniciando automaticamente la aplicacion de node cuando se detectan cambios en el directorio
 
 ```javascript
-    // destructuración de objetos
+// destructuración de objetos
 
-    let deadpool = {
-        nombre : 'Wade',
-        apellido : 'Wilson',
-        poder : 'regeneración'
-    }
+let deadpool = {
+  nombre: "Wade",
+  apellido: "Wilson",
+  poder: "regeneración"
+};
 
-    // let {nombre,apellido,poder} = deadpool;
-    // console.log(nombre,apellido,poder);
+// let {nombre,apellido,poder} = deadpool;
+// console.log(nombre,apellido,poder);
 
-    let {nombre: nom,apellido : ape,poder : po} = deadpool;
-    console.log(nom,ape,po);
+let { nombre: nom, apellido: ape, poder: po } = deadpool;
+console.log(nom, ape, po);
 ```
 
 ## **Event Loop**
 
 > Javascript poseé un modelo de concurrencia basado en un 'loop de eventos' .Este <br>
 > modelo es bastante diferente al modelo de otros lenguajes como c o java.
-
 
 **Para usar fetch en Nodejs :**
 
@@ -180,4 +179,50 @@ Se utilizan generadores para dvolver temporalmente el control al programa llaman
 
 ```sh
     $npm install node-fetch --save-dev
+```
+
+**Curiosidad :**
+
+```javascript
+class Ahorro {
+    constructor(ahorro) {
+        this.valor = ahorro;
+    }
+    getAhorro() {
+        return this.valor;
+    }
+    transformar(callback) {
+        return new Ahorro(callback(this.valor));
+    }
+}
+let procentaje = new Ahorro(100)
+    .transformar(ahorro => (12 * 100) / ahorro)
+    .transformar(ahorro => `${ahorro}%`)
+    .getAhorro();
+
+console.log(procentaje);
+```
+
+**Con programacion Funcional :**
+
+```javascript
+    const obtenerProcentajeGastado = (gastado,ahorro)=>{
+        return UnaCosa(ahorro)
+                .map(ahorroBase=>10*100/ahorroBase)
+                .map()
+    }
+    const UnaCosa = (valor)=>{
+        return{
+            map(fn){
+                return UnaCosa(fn(valor))
+            },
+            fold(fn){
+                return fn(valor)
+            },
+            inspect(){
+                return `UnaCosa(${valor})`
+            }
+
+        }
+    }
 ```
