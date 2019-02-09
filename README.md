@@ -228,3 +228,19 @@ console.log(procentaje);
     }
     console.log(obtenerProcentajeGastado(10,100))
 ```
+
+## **Async Await**
+
+Esto es mucha utilidad para las promesas hell
+
+```javascript
+    // Al colocar la palabra async indirectamente retornamos una promesa
+    const getNombre = async ()=>{
+        return 'thom'
+    }
+
+    //este seria la promesa pero sin el async
+    const myPromise = ()=>{
+        return new Promise(resolve,()=>resolve('thom'))
+    }
+```
