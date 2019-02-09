@@ -37,6 +37,7 @@ const getSalario = (empleado) => {
     })
 }
 
+// Promise hell --recomendacion usar async await
 getEmpleado(4)
     .then(response=>{
         getSalario(response)
@@ -44,3 +45,8 @@ getEmpleado(4)
                 console.log(response)
             },err=>console.log(err))
     },err=>console.log(err))
+
+//Resulto con async await
+const fetchResult = async(id)=>{
+    const 
+}
