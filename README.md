@@ -241,6 +241,6 @@ Esto es mucha utilidad para las promesas hell
 
     //este seria la promesa pero sin el async
     const myPromise = ()=>{
-        return new Promise(resolve,()=>resolve('thom'))
+        return new Promise(resolve=>resolve('thom'))
     }
 ```
