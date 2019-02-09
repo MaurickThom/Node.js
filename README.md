@@ -209,7 +209,6 @@ console.log(procentaje);
     const obtenerProcentajeGastado = (gastado,ahorro)=>{
         return UnaCosa(ahorro)
                 .map(ahorroBase=>10*100/ahorroBase)
-                .map(ahorroBase=>10*100/ahorroBase)
                 .map(porcentaje=>`${porcentaje}%`)
                 .fold(data=>data)
     }
