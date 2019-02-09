@@ -50,7 +50,7 @@ const getSalario = (empleado) => {
 const fetchResult = async(id)=>{
     const response = await getEmpleado(id)
     const data = await getSalario(response)
-    if(response.status !==200) return response
+    // if(data.status !==200) return response
     return data
 }
 // console.log(`Usando Async await`)
