@@ -24,7 +24,8 @@ const profesion = {
 	1: 'programador',
 	2: 'diseñador',
 	3: 'Cocinero',
-	7:'Chef'
+    7:'Chef',
+    10:'teacher'
 }
 
 // mostrar usuarios con id 
@@ -59,3 +60,23 @@ fetchResult(1)
     .catch(err=>console.log(err))
 
 // mostrar a todos los usuarios que tengan ese id profesion
+const getUserProfession = (idProfession)=>{
+    return new Promise((resolve,reject)=>{
+        if(!profesion[idProfession]) return reject(`No existe ese id de profesion`)
+        let arrUser = []
+        usuarios.forEach(user=>{
+            user.profesion_id.forEach(id=>{
+                if(id===idProfession) arrUser.push(user)
+            })
+        })
+        if(arrUser.length) return resolve(arrUser)
+        return reject(`Este id existe pero ningun usuario lo ejerce`)
+    })
+}
+const fetchResult_2 = async (id)=>{
+    const response = await getUserProfession(id)
+    return response;
+}
+fetchResult_2(10)
+    .then(response=>console.log(response))
+    .catch(err=>console.log(err))
