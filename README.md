@@ -247,9 +247,16 @@ Esto es mucha utilidad para las promesas hell
 
 ## **Cookies**
 
+Pequeños documenteos que alamcenan las preferencias del usauario independiente de cada navegador.
+
+Estan diseñadas para contener una cantidad generosa de datos espcificos para un cliente y un sitio web, y se puede acceder a ellos mediante el servidor web o la computadora del cliente.La razón detrás de esto es permitir que el servidor entregue una pagina adaptada a un usuario particular, o la página en sí misma pueda contener algún script que cnonoce los datos en la cookie, y por lo tanto es capaz de transformar información de una visita al sitio web.
+
+La cookie es una pequeña tabla de busquedas que contiene par de valores de datos claves
 
 ## **¿Que caché de un procesador?**
 
 ## **¿Que caché en el navegador?**
+
+Es una memoria que tiene el navedor donde guarda los assets (imagenes ,js ,css , etc)
 
 ## **Problemas del caché del navegador**
