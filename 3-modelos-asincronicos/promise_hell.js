@@ -13,15 +13,15 @@ const buildResult = (user,tweets,github)=>({user,tweets,github})
 // Promise Hell (Aggg xdxd) >:(
 const fetchResult = ()=>{
 	return user()
-			.then(user=>{
-				return tweets()
-						.then(twts=>{
-							return github()
-									.then(rep=>{
-										return buildResult(user,twts,rep)
-									})
-						})
-			})
+		.then(user=>{
+			return tweets()
+					.then(twts=>{
+						return github()
+								.then(rep=>{
+									return buildResult(user,twts,rep)
+								})
+					})
+		})
 }
 // fetchResult()
 // 	.then(log)
@@ -31,4 +31,3 @@ const liftPromises = fn =>(...args)=>Promise.all(args).then(args=>fn(...args))
 const fetcResultPromiseLift =()=>liftPromises(buildResult)(user(),tweets(),github())
 fetcResultPromiseLift().then(log)
 
-// ASync Await :3
