@@ -244,3 +244,12 @@ Esto es mucha utilidad para las promesas hell
         return new Promise(resolve=>resolve('thom'))
     }
 ```
+
+## **Cookies**
+
+
+## **¿Que caché de un procesador?**
+
+## **¿Que caché en el navegador?**
+
+## **Problemas del caché del navegador**
