@@ -251,7 +251,9 @@ Pequeños documenteos que alamcenan las preferencias del usauario independiente 
 
 Estan diseñadas para contener una cantidad generosa de datos espcificos para un cliente y un sitio web, y se puede acceder a ellos mediante el servidor web o la computadora del cliente.La razón detrás de esto es permitir que el servidor entregue una pagina adaptada a un usuario particular, o la página en sí misma pueda contener algún script que cnonoce los datos en la cookie, y por lo tanto es capaz de transformar información de una visita al sitio web.
 
-La cookie es una pequeña tabla de busquedas que contiene par de valores de datos claves
+La cookie es una pequeña tabla de busquedas que contiene par de valores de datos claves.Una vez que la cookie ha sido leída por el código en el servidor o en la computandora del cliente, los datos se pueden recuperar y usar personalizar la página web de la página web de manera apropiada.
+
+Las cookies son prácticamente una forma conveniente de llevar información de una sesión en un sitio web a otra, o entre sesiones en sitios web relacionados, sin tener que cargar una máquina de servidor con grandes cantidades de almacenamiento de datos.Si tuviéramos que almacenar datos en el servidor sin utilizar cookies, sería difícil recuperar la información de un usuario en particular sin requerir un inicio de sesión en cada visita al sitio web. Por lo tanto, una cookie se puede usar simplemente si hay una gran cantidad de información para almacenar. Además, se puede hacer que una cookie persista durante un período de tiempo arbitrario.
 
 ## **¿Que caché de un procesador?**
 
@@ -260,3 +262,6 @@ La cookie es una pequeña tabla de busquedas que contiene par de valores de dato
 Es una memoria que tiene el navedor donde guarda los assets (imagenes ,js ,css , etc)
 
 ## **Problemas del caché del navegador**
+
+
+[Fuente](https://medium.com/datadriveninvestor/cookies-vs-local-storage-2f3732c7d977)
