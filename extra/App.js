@@ -4,6 +4,7 @@ let busca = new Search({
         'Mexico',
         'Peru',
         'Alemania',
+        'Argentina',
         'Suecia',
         'Korea',
         'Brasil'

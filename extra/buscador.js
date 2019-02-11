@@ -23,7 +23,8 @@ class Search{
             console.log(value)
             list.forEach(item=>{
                 if(value){
-                    if(!item.toLowerCase().indexOf(value)){
+                    // if(item.toLowerCase().indexOf(value)!==-1){ //si contiene
+                    if(item.toLowerCase().indexOf(value)===0){ // si comienza
                         this.updateList(item,search)
                     }
                 }
