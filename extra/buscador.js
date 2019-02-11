@@ -1,12 +1,12 @@
 class Search{
     constructor(obj){
-        this.el = document.querySelector(obj.el)
+        this.element = document.getElementById(obj.id)
         this.list = obj.list
         this.init()
     }
     init(){
         let input , listContainer
-        this.el.innerHTML =`
+        this.element.innerHTML =`
             <input placeholder="Buscar aquí" type="text" class="input">
             <listgroup class="is-visible" id="searchList"></listgroup>
         `

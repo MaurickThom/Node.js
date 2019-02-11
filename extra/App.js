@@ -1,5 +1,5 @@
-let buscador = new Search({
-    id : '',
+let busca = new Search({
+    id : 'buscador',
     list : [
         'Mexico',
         'Peru',
