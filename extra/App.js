@@ -9,3 +9,4 @@ let busca = new Search({
         'Brasil'
     ]
 })
+busca.init()
