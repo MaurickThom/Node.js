@@ -259,11 +259,9 @@ Las cookies son prácticamente una forma conveniente de llevar información de u
 
 Las cookies son principalmente para la lectura del ladon del servidor, mientras que el localStorage solo puede ser leído por el lado del cliente.Ademas de guardas datos , una gran diferencia es el tamaño de datos que puede almacenar . El local storage alamcena 5MB
 
-## **¿Que caché de un procesador?**
-
 ## **¿Que caché en el navegador?**
 
-Es una memoria que tiene el navedor donde guarda los assets (imagenes ,js ,css , etc) , permite cargar mas rápido
+Es una memoria que tiene el navedor donde guarda los assets (imagenes ,js ,css , etc) , permite cargar mas rápido guardando en la pc del cliente parte de la informacion que previamente se ha solicitado.
 
 ## **Problemas del caché del navegador**
 
