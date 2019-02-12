@@ -16,13 +16,20 @@ class UI{
         productList.appendChild(element)
     }
     deleteProduct(element){
-        productList
+        element.parentElement.parentElement.remove()
+        this.showMessage('delete','delete')
+
+
     }
     showMessage(message,css){
         const div = document.createElement('div')
         div.className=`${css}`
         div.appendChild(document.createTextNode(message))
         const container = document.getElementById('notification')
+        container.appendChild(div)
+        setTimeout(()=>{
+            div.remove()
+        },3000)
     }
 }
 const ui = new UI()
@@ -34,5 +41,6 @@ document.getElementById('list-products').addEventListener('click',e=>{
     if(e.target.tagName==='A'){
         e.preventDefault()
         e.target.style.color = 'red'
+        ui.deleteProduct(e.target)
     }
 })
