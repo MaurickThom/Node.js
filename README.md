@@ -267,6 +267,12 @@ Es una memoria que tiene el navedor donde guarda los assets (imagenes ,js ,css ,
 
 ## **Problemas del caché del navegador**
 
+Cuando se actuializa una página es decir subir los cambios , cuando se lanza a producción los cambios no se aplican ya que la cache del navegador guarda la informacion necesaria para no "comunicarse" otra ves con el servidor (aunque si lo hace) , lo que trato de decir es que el navegador crea un punto de tal manera que agiliza la experiencia guardando ciertos datos de la pagina , por eso si queremos ver los cambios tendriamos que borrar la cache de la navegación.Pero esto es muy molesto , por lo cual a las llamadas de los css o de los script se crea parametros para que la cache lo detecte como nuevo .
+
+```html
+    <!-- Codigos -->
+    <script src="js/script.js?11022019"></script>
+````
 
 [Fuente](https://medium.com/datadriveninvestor/cookies-vs-local-storage-2f3732c7d977)
 
