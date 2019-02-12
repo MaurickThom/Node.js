@@ -31,11 +31,14 @@ input,button{
 a{
     text-decoration: none;
 }
-.success{
-    background: greenyellow;
+.success,.delete{
+    width: 100%;
     color:white;
+
+}
+.success{
+    background: green;
 }
 .delete{
-    color : white;
     background: red;
 }

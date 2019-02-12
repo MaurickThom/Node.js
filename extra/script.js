@@ -11,9 +11,16 @@ class UI{
         const productList = document.getElementById('list-products')
         const element = document.createElement('div')
         element.innerHTML=`
-            <li id="product-item"><a href=#>Delete</a></li>
+            <li id="product-item">
+                <strong>Product</strong>: ${product.name} -
+                <strong>Price</strong>: ${product.price} - 
+                <strong>Year</strong>: ${product.year}
+                <a href=#>Delete</a>
+            
+            </li>
         `
         productList.appendChild(element)
+        this.showMessage('adding','success')
     }
     deleteProduct(element){
         element.parentElement.parentElement.remove()
@@ -35,7 +42,10 @@ class UI{
 const ui = new UI()
 document.getElementById('save').addEventListener('click',e=>{
     e.preventDefault();
-    ui.addProduct()
+    const name = document.getElementById('name').value,
+        price = document.getElementById('price').value,
+        year = document.getElementById('year').value
+    ui.addProduct(new Product(name,price,year))
 })
 document.getElementById('list-products').addEventListener('click',e=>{
     if(e.target.tagName==='A'){
