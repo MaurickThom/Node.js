@@ -278,4 +278,7 @@ Cuando se actualiza una página es decir subir los cambios , cuando se lanza a p
 
 ```python
     # Autor : Thom Maurick Roman Aguilar
+    # Estudiante de la carrera Ingeniería de sistemas
+    
+    # Si no estas deacuerdo con algo que está escrito en este repositorio puedes madarme un pull request :3
 ```
