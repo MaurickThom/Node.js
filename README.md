@@ -285,7 +285,7 @@ El comando `--save` significara que son dependencias obligatorias de la aplicaci
 
 **Significado :**
 
-- yargs
+- yargs : es una libreria muy popular y usada dentro del mundo de javascript, con lo cual podemos parar parámetros de nuestra aplicación hecha en Node.js desde la terminal
 - colors
 
 [Fuente](https://medium.com/datadriveninvestor/cookies-vs-local-storage-2f3732c7d977)
