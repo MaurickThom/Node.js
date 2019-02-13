@@ -1,1 +1,4 @@
+# coloqué para que ignorara todas las carpetas node_modules pero lo hice
+# despues de las demas asi qué apartir de la carpeta 9-yargs la
+# comenzará a ignorar
 node_modules/
