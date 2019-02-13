@@ -1,5 +1,5 @@
 const fs = require('fs')
-module.exports.createFile = (base=10)=>{
+module.exports.createFile = (base)=>{
     return new Promise((resolve,reject)=>{
         if(!Number(base)) return reject(`${base} no es un número`)
         let data = ``
