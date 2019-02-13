@@ -283,6 +283,11 @@ Cuando se actualiza una página es decir subir los cambios , cuando se lanza a p
 
 El comando `--save` significara que son dependencias obligatorias de la aplicación
 
+**Significado :**
+
+- yargs
+- colors
+
 [Fuente](https://medium.com/datadriveninvestor/cookies-vs-local-storage-2f3732c7d977)
 
 [Fuente](https://stackoverflow.com/questions/3220660/local-storage-vs-cookies)
