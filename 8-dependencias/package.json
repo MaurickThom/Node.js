@@ -11,5 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "yargs": "^13.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
   }
 }
