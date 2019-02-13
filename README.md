@@ -287,6 +287,14 @@ El comando `--save` significara que son dependencias obligatorias de la aplicaci
 
 - yargs : es una libreria muy popular y usada dentro del mundo de javascript, con lo cual podemos parar parámetros de nuestra aplicación hecha en Node.js desde la terminal
 
+
+## **HTTP**
+
+```sh
+    $ npm init -y
+    $ npm i --save express express-session
+```
+
 [Fuente](https://medium.com/datadriveninvestor/cookies-vs-local-storage-2f3732c7d977)
 
 [Fuente](https://stackoverflow.com/questions/3220660/local-storage-vs-cookies)
