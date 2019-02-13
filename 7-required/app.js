@@ -8,3 +8,9 @@
  * 2. Existen otras que se necesitan instalar, Otras que son casi lo mismo que la 2 pero a diferencia esta libreria son desarrolladas por otras entidades
  * 3. Y la ultima de los required que nosotros mismos creamos
  */
+const fs = require('fs')
+
+fs.writeFile('./7-required/tabla-2.txt','Hello Node.js',err=>{
+    if(err) throw err;
+    console.log('creado')
+})
