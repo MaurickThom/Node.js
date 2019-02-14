@@ -14,5 +14,5 @@ switch(argv._[0]){
             .catch(err=>console.log(err))
     break
     default :
-        console.log('Comando desconocido')
+        console.log('Comando desconocido'.red)
 }
