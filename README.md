@@ -295,6 +295,10 @@ El comando `--save` significara que son dependencias obligatorias de la aplicaci
     $ npm i --save express express-session
 ```
 
+## **Diferencia entre --save y --save-dev**
+
+.
+
 [Fuente](https://medium.com/datadriveninvestor/cookies-vs-local-storage-2f3732c7d977)
 
 [Fuente](https://stackoverflow.com/questions/3220660/local-storage-vs-cookies)
