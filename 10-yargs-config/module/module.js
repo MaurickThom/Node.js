@@ -17,7 +17,7 @@ const  toList =(base,limit)=>{
     return new Promise((resolve,reject)=>{
         if(!Number(base) || !Number(limit)) return reject('El paramatro ingresado no es el correcto')
         let data = ``
-        for(let i = 0 ;i<=limit;i++){
+        for(let i = 1 ;i<=limit;i++){
             data+=`${base}*${i}=${base*i}\n`
         }
         return resolve(data)
