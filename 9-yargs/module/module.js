@@ -1,5 +1,5 @@
 const fs = require('fs')
-module.exports.createFile = (base)=>{
+const createFile = (base)=>{
     return new Promise((resolve,reject)=>{
         if(!Number(base)) return reject(`${base} no es un número`)
         let data = ``
@@ -11,4 +11,18 @@ module.exports.createFile = (base)=>{
             return resolve(`table-${base}.txt`)
         })
     })
+}
+const toList =(base,limite)=>{
+    return new Promise((resolve,reject)=>{
+        if(!Number(base)) return reject(`${base} no es un número`)
+        let data = ``
+        for (let i = 1; i <=limite; i++) {
+            data+=`${base} * ${i} = ${base*i}\n`
+        }
+        return resolve(data)
+    })
+}
+module.exports ={
+    createFile,
+    toList
 }
