@@ -21,7 +21,7 @@ switch(argv._[0]){
             .catch(err=>console.log(err))
     break
     case 'create' :
-        createFile(argv.base)
+        createFile(argv.base,argv.limit)
             .then(response=>console.log(response))
             .catch(err=>console.log(err))
     break
