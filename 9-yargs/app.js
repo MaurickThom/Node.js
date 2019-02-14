@@ -9,6 +9,16 @@ const argv = require('yargs')
                         default:10
                     }
                 })
+                .command('create','Creando tabla',{
+                    base :{
+                        demand:true,
+                        alias:'b'
+                    },
+                    limit :{
+                        alias:'l',
+                        default:10
+                    }
+                })
                 .help()
                 .argv
 const {createFile,toList} = require('./module/module')
