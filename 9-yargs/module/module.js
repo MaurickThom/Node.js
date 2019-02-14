@@ -1,7 +1,7 @@
 const fs = require('fs')
 const createFile = (base,limite)=>{
     return new Promise((resolve,reject)=>{
-        if(!Number(base) && !Number(limite)) return reject(`${base} no es un número`)
+        if(!Number(base) || !Number(limite)) return reject(`${base} no es un número`)
         let data = ``
         for (let i = 1; i <=limite; i++) {
             data+=`${base} * ${i} = ${base*i}\n`
@@ -14,7 +14,7 @@ const createFile = (base,limite)=>{
 }
 const toList =(base,limite)=>{
     return new Promise((resolve,reject)=>{
-        if(!Number(base) && !Number(limite)) return reject(`${base} no es un número`)
+        if(!Number(base) || !Number(limite)) return reject(`${base} no es un número`)
         let data = ``
         for (let i = 1; i <=limite; i++) {
             data+=`${base} * ${i} = ${base*i}\n`
