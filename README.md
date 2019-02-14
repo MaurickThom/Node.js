@@ -297,7 +297,9 @@ El comando `--save` significara que son dependencias obligatorias de la aplicaci
 
 ## **Diferencia entre --save y --save-dev**
 
-.
+- `--save-dev` se usa para guardar el paquete para propósitos de desarrollo
+    - Ejm : unit test , minificación , etc
+- `--save` se usa para guardar el paquete requerido para que la aplicación se ejecute
 
 [Fuente](https://medium.com/datadriveninvestor/cookies-vs-local-storage-2f3732c7d977)
 
