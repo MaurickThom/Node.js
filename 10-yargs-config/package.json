@@ -1,0 +1,16 @@
+{
+  "name": "10-yargs-config",
+  "version": "1.0.0",
+  "description": "Optimizacion del args",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thom Maurick",
+  "license": "ISC",
+  "devDependencies": {
+    "node-fetch": "^2.3.0",
+    "nodemon": "^1.18.10",
+    "yargs": "^13.1.0"
+  }
+}
