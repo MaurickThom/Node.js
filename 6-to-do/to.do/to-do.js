@@ -6,7 +6,6 @@ let arrToDo = []
 const saveDB = ()=>{
     return new Promise((resolve,reject)=>{
         let data =JSON.stringify(arrToDo)
-        if(!data) return reject('Error data is empty')
         fs.writeFile('db/data.json',data,err=>{
             if(err) return reject(err)
             return resolve(data)
@@ -33,6 +32,12 @@ const create = (description,complete)=>{
             .catch(err=>console.log(err.red))
     return toDo
 }
+const toList = ()=>{
+    loadingDB()
+    if(arrToDo.length) return arrToDo
+    return `Array vacio`
+}
 module.exports = {
-    create
+    create,
+    toList
 }
