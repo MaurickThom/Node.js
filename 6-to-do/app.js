@@ -1,4 +1,6 @@
-const argv = require('yargs').argv
+// const argv = require('yargs').argv
+const argv = require('./config/yargs').argv
+if(!argv) return console.log('Error'.red)
 const colors = require('colors')
 console.log(argv)
 
