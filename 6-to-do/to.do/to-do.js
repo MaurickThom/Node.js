@@ -12,11 +12,16 @@ const saveDB = ()=>{
         })
     })
 }
+
+const loadingDB = ()=>{
+    arrToDo = require('../db/data.json')
+}
 const create = (description)=>{
     let toDo = {
         description,
         complete:false
     }
+    loadingDB()
     arrToDo.push(toDo)
     saveDB().then(result=>console.log(result.green))
             .catch(err=>console.log(err.red))
