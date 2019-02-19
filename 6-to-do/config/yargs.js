@@ -4,7 +4,7 @@ const opts = {
         alias:'d'
     }
     ,
-    completado:{
+    complete:{
         alias:'c',
         default:true
     }

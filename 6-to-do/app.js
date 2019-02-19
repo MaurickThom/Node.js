@@ -1,19 +1,21 @@
 // const argv = require('yargs').argv
 const argv = require('./config/yargs').argv
-if(!argv) return console.log('Error'.red)
+const toDo = require('./to.do/to-do')
+
 const colors = require('colors')
 console.log(argv)
 
 let command = argv._[0]
 
 switch (command.toLowerCase()) {
-    case 'crear':
+    case 'create':
+        console.log(toDo.create(argv.description));
         console.log('Crear nota'.green)    
         break
-    case 'listar':
+    case 'list':
         console.log('Listado'.green)
         break
-    case 'actualizar' :
+    case 'update' :
         console.log('Actualizando'.green)
         break
     default:
