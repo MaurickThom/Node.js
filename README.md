@@ -289,7 +289,7 @@ El comando `--save` significara que son dependencias obligatorias de la aplicaci
 
 ## **HTTP**
 
-Todas las peticiones necesitaran de un protocolo
+Todas las peticiones web necesitaran de un protocolo . Pero que es un protocolo , un protocolo e un conjunto de reglas que se tiene que seguir para poder objtener un resultado .Intercambiar informacion entre un cliente un servidor web
 
 ```sh
     $ npm init -y

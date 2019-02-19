@@ -1,19 +1,20 @@
 const argv = require('yargs').argv
+const colors = require('colors')
 console.log(argv)
 
 let command = argv._[0]
 
 switch (command.toLowerCase()) {
     case 'crear':
-        console.log('Crear nota')    
+        console.log('Crear nota'.green)    
         break
     case 'listar':
-        console.log('Listado')
+        console.log('Listado'.green)
         break
     case 'actualizar' :
-        console.log('Actualizando')
+        console.log('Actualizando'.green)
         break
     default:
-        console.log('No existe ese comando')
+        console.log('No existe ese comando'.red)
     
 }
