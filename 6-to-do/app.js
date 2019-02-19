@@ -9,7 +9,7 @@ let command = argv._[0]
 
 switch (command.toLowerCase()) {
     case 'create':
-        console.log(toDo.create(argv.description));
+        console.log(toDo.create(argv.description,argv.complete));
         console.log('Crear nota'.green)    
         break
     case 'list':

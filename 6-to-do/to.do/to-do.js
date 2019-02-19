@@ -1,4 +1,5 @@
 const fs = require('fs')
+const fetch = require('node-fetch')
 const colors = require('colors')
 let arrToDo = []
 
@@ -14,14 +15,19 @@ const saveDB = ()=>{
 }
 
 const loadingDB = ()=>{
-    arrToDo = require('../db/data.json')
+    try {
+        arrToDo = require('../db/data.json')
+    } catch (error) {
+        arrToDo = []
+    }
 }
-const create = (description)=>{
+const create = (description,complete)=>{
+    loadingDB()
+    
     let toDo = {
         description,
-        complete:false
+        complete
     }
-    loadingDB()
     arrToDo.push(toDo)
     saveDB().then(result=>console.log(result.green))
             .catch(err=>console.log(err.red))
