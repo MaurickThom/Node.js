@@ -35,9 +35,19 @@ const create = (description,complete)=>{
 const toList = ()=>{
     loadingDB()
     if(arrToDo.length) return arrToDo
-    return `Array vacio`
+    return `Array vacio`.red
+}
+
+const update = (description,complete)=>{
+    loadingDB()
+    let index = arrToDo.findIndex(task=>task.description===description)
+    if(index<0) return console.log('No existe'.red)
+    arrToDo[index].complete=complete
+    saveDB()
+    return console.log('Actualizado'.green)
 }
 module.exports = {
     create,
-    toList
+    toList,
+    update
 }

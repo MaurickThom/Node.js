@@ -1,6 +1,6 @@
 // const argv = require('yargs').argv
 const argv = require('./config/yargs').argv
-const {create,toList} = require('./to.do/to-do')
+const {create,toList,update} = require('./to-do/to-do')
 
 const colors = require('colors')
 console.log(argv)
@@ -14,10 +14,10 @@ switch (command.toLowerCase()) {
         break
     case 'list':
         console.log(toList());
-        console.log('Listado'.green)
+        
         break
-    case 'update' :
-        console.log('Actualizando'.green)
+    case 'update' : // esto solo actualizara
+        update(argv.description,argv.complete)
         break
     default:
         console.log('No existe ese comando'.red)

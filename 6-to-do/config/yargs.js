@@ -6,7 +6,7 @@ const opts = {
     ,
     complete:{
         alias:'c',
-        default:true
+        default:false
     }
 }
 const argv = require('yargs')
