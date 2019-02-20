@@ -21,7 +21,7 @@ switch (command.toLowerCase()) {
         toListOf(complete)
         
         break
-    case 'update' : // esto solo actualizara
+    case 'update' :
         update(argv.description,complete)
         break
     case 'delete':
