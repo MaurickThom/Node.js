@@ -46,8 +46,17 @@ const update = (description,complete)=>{
     saveDB()
     return console.log('Actualizado'.green)
 }
+const deleteElement = (description)=>{
+    loadingDB()
+    let index = arrToDo.findIndex(task=>task.description===description)
+    if(index<0) return console.log('No existe'.red)
+    arrToDo.splice(index,1)
+    saveDB()
+    return console.log('Elimiando'.green)
+}
 module.exports = {
     create,
     toList,
-    update
+    update,
+    deleteElement
 }
