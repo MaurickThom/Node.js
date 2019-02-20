@@ -54,9 +54,16 @@ const deleteElement = (description)=>{
     saveDB()
     return console.log('Elimiando'.green)
 }
+const toListOf=(complete)=>{
+    loadingDB()
+    arrToDo.forEach(task=>{
+        if(task.complete===complete) return console.log(task);
+    })
+}
 module.exports = {
     create,
     toList,
     update,
-    deleteElement
+    deleteElement,
+    toListOf
 }

@@ -1,6 +1,6 @@
 // const argv = require('yargs').argv
 const argv = require('./config/yargs').argv
-const {create,toList,update,deleteElement} = require('./to-do/to-do')
+const {create,toList,update,deleteElement,toListOf} = require('./to-do/to-do')
 
 const colors = require('colors')
 console.log(argv)
@@ -13,7 +13,12 @@ switch (command.toLowerCase()) {
         console.log('Crear nota'.green)
         break
     case 'list':
-        console.log(toList());
+        if (!argv.complete){
+            console.log(toList());
+            return 
+        }
+        // console.log(argv.complete)
+        toListOf(complete)
         
         break
     case 'update' : // esto solo actualizara
