@@ -16,7 +16,7 @@ const saveDB = ()=>{
 const loadingDB = ()=>{
     try {
         arrToDo = require('../db/data.json')
-    } catch (error) {
+    } catch{
         arrToDo = []
     }
 }

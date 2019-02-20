@@ -6,10 +6,10 @@ const colors = require('colors')
 console.log(argv)
 
 let command = argv._[0]
-
+let complete = String(argv.complete) ==='true'
 switch (command.toLowerCase()) {
     case 'create':
-        console.log(create(argv.description,argv.complete));
+        console.log(create(argv.description,complete));
         console.log('Crear nota'.green)
         break
     case 'list':
@@ -17,7 +17,7 @@ switch (command.toLowerCase()) {
         
         break
     case 'update' : // esto solo actualizara
-        update(argv.description,argv.complete)
+        update(argv.description,complete)
         break
     default:
         console.log('No existe ese comando'.red)
