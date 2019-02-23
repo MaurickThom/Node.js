@@ -11,3 +11,8 @@ const argv =require('yargs').options({
 console.log(argv.direction);
 let encodeUrl = encodeURI(argv.direction)
 axios.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURI}&key=AIzaSyBKUogpwJD8WOTie2RHGDGshTTFOhGKxiU`)
+.then((result) => {
+    console.log(result);
+}).catch((err) => {
+    console.log("Error");
+});
