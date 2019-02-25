@@ -3,8 +3,7 @@
 
 // Make http requests from node.js
 
-const {lugarLatLng} = require('./lugar/lugar')
-const {getClima} = require('./clima/clima')
+const {getCoordsOf} = require('./module/module')
 const argv =require('yargs').options({
     direction:{
         alias:'d',
@@ -14,6 +13,6 @@ const argv =require('yargs').options({
 }).help().argv
 console.log(argv.direction);
 
-lugarLatLng(argv.direction)
+getCoordsOf(argv.direction)
 .then(console.log)
-.catch(console.err)
+.catch(console.error)
