@@ -311,6 +311,8 @@ Se puede definir interface como un contrato entre dos partes , el cual una estab
 
 ### **Arquitectura REST**
 
+Es una forma de crear APIs
+
 [Fuente](https://medium.com/datadriveninvestor/cookies-vs-local-storage-2f3732c7d977)
 
 [Fuente](https://stackoverflow.com/questions/3220660/local-storage-vs-cookies)
