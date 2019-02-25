@@ -3,7 +3,7 @@
 
 // Make http requests from node.js
 
-const {getCoordsOf} = require('./module/module')
+const {getCoordsOf} = require('./module_/wrapper.js')
 const argv =require('yargs').options({
     direction:{
         alias:'d',
