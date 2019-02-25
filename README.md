@@ -309,6 +309,8 @@ Todas las peticiones web necesitaran de un protocolo . Pero que es un protocolo 
 Para entender que es una API hay que enteneder que s una interface.
 Se puede definir interface como un contrato entre dos partes , el cual una establece las condiciones de la relación, en este caso , la interfaz especifica que métodos , funciones , propiedades , recursos estaran disponibles para ser usados
 
+### **Arquitectura REST**
+
 [Fuente](https://medium.com/datadriveninvestor/cookies-vs-local-storage-2f3732c7d977)
 
 [Fuente](https://stackoverflow.com/questions/3220660/local-storage-vs-cookies)
