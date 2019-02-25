@@ -2,6 +2,8 @@ const axios = require('axios')
 const lugarLatLng = async(direction)=>{
 
     let encodeUrl = encodeURI(direction)
+
+    // IMPORTANTE EL API KEY SOLO FUNCIONA PARA UN REQUEST POR DÍA , POLITICAS DE GOOGLE >:)
     const resp = await axios.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${encodeUrl}&key=AIzaSyBKUogpwJD8WOTie2RHGDGshTTFOhGKxiU`)
     let result = resp.data
     if ( result.status==='ZERO_RESULTS' || 
