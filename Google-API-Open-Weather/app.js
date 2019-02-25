@@ -3,7 +3,7 @@
 
 // Make http requests from node.js
 
-const axios = require('axios')
+const {lugarLatLng} = require('./lugar/lugar')
 const argv =require('yargs').options({
     direction:{
         alias:'d',
@@ -12,17 +12,7 @@ const argv =require('yargs').options({
     }
 }).help().argv
 console.log(argv.direction);
-let encodeUrl = encodeURI(argv.direction)
 
-axios.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${encodeUrl}&key=AIzaSyBKUogpwJD8WOTie2RHGDGshTTFOhGKxiU`)
-.then((result) => {
-    console.log(result.data);
-    let location = result.data.results[0]
-    let coords = location.geometry.location
-
-    console.log('Dirección : ',location.formatted_address)
-    console.log('Lat : ',coords.lat);
-    console.log('Lng : ',coords.lng);
-}).catch((err) => {
-    console.log("Error");
-});
+lugarLatLng(argv.direction)
+.then(console.log)
+.catch(console.err)
