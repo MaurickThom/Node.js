@@ -311,8 +311,10 @@ Se puede definir interface como un contrato entre dos partes , el cual una estab
 
 ### **Arquitectura REST**
 
-Es una forma de crear APIs
+Tambien conocido como Representational State Transfer ,es una forma de crear APIs.
+Las aplicaciones que utilizan esta arquitectura estan basadas en recursos mas no en acciones , mayormente son las aplicaciones que estan basadas en Cliente - Servidor .
 
+Esta arquitectura que propone principios que ayudan a que una aplicación web sea estándar .
 [Fuente](https://medium.com/datadriveninvestor/cookies-vs-local-storage-2f3732c7d977)
 
 [Fuente](https://stackoverflow.com/questions/3220660/local-storage-vs-cookies)
