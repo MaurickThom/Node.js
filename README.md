@@ -316,7 +316,18 @@ Las aplicaciones que utilizan esta arquitectura estan basadas en recursos mas no
 
 Esta arquitectura que propone principios que ayudan a que una aplicación web sea estándar .
 
+### **Rutas**
+
+- Las **rutas** ayudan a definir los accesos a nuestra aplicacion web
+- Puede devolver un valor, generar una llamada a una vista o un controlador
+
 ### **Utilización del middleware**
+
+> *Tambien conocida como lógica de intercambio de información entre aplicaciones, es un software que asiste a una aplicación para interactuar o comunicarse con otras aplicaciones*
+
+Express es una infraestructura web de direccionamiento y middleware que tiene una funcionalidad mínima propia : una aplicacion Express es fundamentalmente una seria de llamadas a funciones de middlewar.
+
+Estos son módulos **plug and play** que se puede apilar arbitrariamente en cualquier orden y proveen cierta funcionalidad
 
 [Fuente](https://medium.com/datadriveninvestor/cookies-vs-local-storage-2f3732c7d977)
 
