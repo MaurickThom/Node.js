@@ -11,8 +11,8 @@ http.createServer((request,response)=>{
         url :request.url
     }
     // response.write('Hola mundo')
-    response.write(JSON.stringify(salida))
-    response.end()
+    response.write(JSON.stringify(salida)) //escribe una respuesta al cliente
+    response.end() // termina la repuesta
 })
 .listen(8080)
 
