@@ -12,4 +12,6 @@ app.get('/',(request,response)=>{ // Ese / significa que toda las peticiones que
     response.send(salida)
 
 })
-app.listen(8080)
+app.listen(8080,()=>{
+    console.log('Escuchando perticiones en el puerto 8080');
+})
