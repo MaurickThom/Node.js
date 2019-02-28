@@ -32,7 +32,7 @@ app.get('/', (request, response) => response.end('<h1>sdfsdf</h1>'))
                 'content-type': 'text/html;charset=utf-8'
             })
             .end(`
-                <h1>Hola ${request.query.s} busqueda Express.js</h1>
+                <h1>${request.query.s} busqueda Express.js</h1>
             `)
     })
     .listen(3000, () => {
