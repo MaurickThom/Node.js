@@ -331,6 +331,14 @@ Estos son módulos **plug and play** que se puede apilar arbitrariamente en cual
 
 Middleware es un software que asiste a una aplicación para interacctuar o comunicarsae con otras aplicaciones, o paquetes de programas, redes,hardware y/o sistemas operativos . De esta forma, se provee una solución que mejora la calidad de servicio, así como la seguridad,el envío de mensajes , la actualizacion del directorio de servicio.
 
+### **Router**
+
+.
+
+### **Generador de express**
+
+.
+
 [Fuente](https://medium.com/datadriveninvestor/cookies-vs-local-storage-2f3732c7d977)
 
 [Fuente](https://stackoverflow.com/questions/3220660/local-storage-vs-cookies)
