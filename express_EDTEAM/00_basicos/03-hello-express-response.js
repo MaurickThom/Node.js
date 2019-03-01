@@ -3,9 +3,13 @@ const express = require('express'),
 
 
 app
-.get('/',(request,response)={
-    response.send
+.get('/',(request,response)=>{
+    response.send('')
 })
-.get('/',(request,response)={})
-.get('/',(request,response)={})
-.get('/',(request,response)={})
+.get('/escuela-digital',(request,response)=>{
+    response.send(html`
+        <h1>Hola Escuel aDigital</h1>
+    `)
+})
+.get('/',(request,response)=>{})
+.get('/',(request,response)=>{})
