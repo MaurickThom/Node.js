@@ -333,6 +333,8 @@ Middleware es un software que asiste a una aplicación para interacctuar o comun
 
 ### **Generador de express**
 
+>http://expressjs.com/en/starter/generator.html
+
 Esto se utilizara para construir un esqueleto , platilla , o una capa abstracta para la creacion rapida de la aplicacion con express
 
 ```sh
