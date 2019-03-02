@@ -12,6 +12,9 @@ app.get('/',(request,response)=>{ // Ese / significa que toda las peticiones que
     response.send(salida)
 
 })
-app.listen(8080,()=>{
+.get('/data',(request,response)=>{
+    response.send('Hola data')
+})
+.listen(8080,()=>{
     console.log('Escuchando peticiones en el puerto 8080');
 })

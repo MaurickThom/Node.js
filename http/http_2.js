@@ -10,7 +10,7 @@ app.listen(3000,()=>{
     console.log('Puerto 3000')
 })
 
-// Verbos GET POST  :Define el tipo de request de pedido que se hara al servidor
+// Verbos GET POST DELETE PUT :Define el tipo de request de pedido que se hara al servidor
 /**
  * GET : obtener la ruta / y luego define la version del protocolo a usar (GET / HTTP/1.1)
  * 
