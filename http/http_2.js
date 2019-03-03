@@ -3,7 +3,8 @@ const express = require('express')
 const app = express()
 
 app.get('/',(req,resp) => {
-    resp.send('server')
+    resp.send(`${req.query.nombre || 'anonimo'}`)
+    // http://localhost:3000/?nombre=thom
 })
 
 app.listen(3000,()=>{
@@ -15,4 +16,7 @@ app.listen(3000,()=>{
  * GET : obtener la ruta / y luego define la version del protocolo a usar (GET / HTTP/1.1)
  * 
  * headers : son informacion adicional que el cliente puede darle al servidor
+ * 
+ * Query string
+ * Query Params : informacion extra que se le enviara al servidor
  */
