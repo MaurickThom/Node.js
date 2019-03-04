@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+    body
+        h1 Por favor , responde las siguientes preguntas :
+        form(action="/responder_encuesta", method="post")
+            div Primer nombre
+            input(type="text",name="primernombre",value="",required)
+
+            div Apellido
+            input(type="text",name="apellido",value="",required)
+
+            div ¿Qué prefieres?
+            input(type="radio",name="preferencia",id="prefrencia1",value="café",required)
+            label(for="preferencia1") Café
+            input(type="radio",name="preferencia",id="preferencia2",value="té")
+            label(for="preferencia2") Té
+
+            br
+            button Enviar
