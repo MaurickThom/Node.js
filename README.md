@@ -341,6 +341,8 @@ Esto se utilizara para construir un esqueleto , platilla , o una capa abstracta 
     $ npm install express-generator -g
 ```
 
+### **Usando NetCat**
+
 [Fuente](https://medium.com/datadriveninvestor/cookies-vs-local-storage-2f3732c7d977)
 
 [Fuente](https://stackoverflow.com/questions/3220660/local-storage-vs-cookies)
