@@ -6,8 +6,11 @@ app.get('/',(req,resp) => {
     resp.send(`${req.query.nombre || 'anonimo'}`)
     // http://localhost:3000/?nombre=thom
 })
-
-app.listen(3000,()=>{
+.get('/user/:name',(request,response)=>{
+    response.send(`${request.params.name}`)
+    // http://localhost:3000/user/thom
+})
+.listen(3000,()=>{
     console.log('Puerto 3000')
 })
 
@@ -19,4 +22,6 @@ app.listen(3000,()=>{
  * 
  * Query string
  * Query Params : informacion extra que se le enviara al servidor
+ * 
+ * Ruta dinámica
  */
