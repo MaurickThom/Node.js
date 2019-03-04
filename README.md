@@ -343,6 +343,13 @@ Esto se utilizara para construir un esqueleto , platilla , o una capa abstracta 
 
 ### **Usando NetCat**
 
+Es usado para las conexiones de TCP y UDP
+
+```sh
+    $ man nc # Esto se usara para ver las opciones de netcat
+    $ 
+```
+
 [Fuente](https://medium.com/datadriveninvestor/cookies-vs-local-storage-2f3732c7d977)
 
 [Fuente](https://stackoverflow.com/questions/3220660/local-storage-vs-cookies)
