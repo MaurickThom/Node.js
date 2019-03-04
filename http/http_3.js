@@ -4,3 +4,13 @@
  * 
  * 
  */
+const express = require('express'),
+    app = express()
+app.set('view engine','pug')
+app.set('views',`${__dirname}/views`)
+.get('/encuesta',(request,response)=>{
+    response.render('encuesta')
+})
+.listen(3000,()=>{
+
+})
