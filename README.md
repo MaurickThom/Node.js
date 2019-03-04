@@ -377,6 +377,9 @@ Un Nombre de Recurso Uniforme (URN) es un identificador uniforme de recursos (UR
 - Un URL es un URI que identifica un recurso y también proporciona los medio para localizar el recurso mediante la descripción de la forma de acceder a el
 - Un  URL es un URI
 - Un URL no es necesariamente un URI
+- Puedes obtener una "cosa" a través de una URL , pero no se pude conseguir cualq cosa desde una URN
+
+En conclusión, si el URL describe tanto la ubicación y el nombre de un recurso , el término a utilizar es URI.
 
 [Fuente](https://medium.com/datadriveninvestor/cookies-vs-local-storage-2f3732c7d977)
 
