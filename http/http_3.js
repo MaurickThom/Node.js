@@ -5,9 +5,12 @@
  * 
  */
 const express = require('express'),
-    app = express()
+    app = express(),
+    bodyParser = require('body-parser')
+
+app.use(bodyParser.urlencoded({extended:false}))
 app.set('view engine','pug')
-app.set('views',`${__dirname}/views`)
+.set('views',`${__dirname}/views`)
 .get('/encuesta',(request,response)=>{
     response.render('encuesta')
 })
@@ -16,5 +19,4 @@ app.set('views',`${__dirname}/views`)
     response.send('Gracias')
 })
 .listen(3000,()=>{
-
-}) 
+})
