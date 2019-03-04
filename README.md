@@ -347,7 +347,18 @@ Es usado para las conexiones de TCP y UDP
 
 ```sh
     $ man nc # Esto se usara para ver las opciones de netcat
-    $ 
+    $ nc -v localhost 3000 # informacion/ a que maquina me quiero conectar/por medio de que puerto
+    >>> found 0 associations
+    >>> found 1 connections
+    >>>         1:  flags = B2(CONNECTED,PREFERRED)
+    >>>             outif lo0
+    >>>             src ::1 port 58793
+```
+
+```sh
+    $ GET / HTTP/1.1
+    # OTRO
+    $ GET /?nombre)daniel HTTP/1.1
 ```
 
 [Fuente](https://medium.com/datadriveninvestor/cookies-vs-local-storage-2f3732c7d977)
