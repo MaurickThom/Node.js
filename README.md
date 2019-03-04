@@ -368,6 +368,16 @@ URI es el camino para identificar cualquiera de estos puntos de contenido, ya se
 
 Por tanto , una URI es una cadena de caracteres que se utilizan para identificar un nombre o un recurso en internet.
 
+Una URI identifica un recurso , ya sea por ubicación o un nombre, o ambos,Un URI tiene dos especializaciones conocidas como URL y URN.
+
+URL es un subconjunto de URI que especifica que un recurso identificado está disponible y el mecanismo para recuperarlo.La URL define cómo se puede obtener el recurso
+
+Un Nombre de Recurso Uniforme (URN) es un identificador uniforme de recursos (URI) que utiliza el esquema de URN, y no implica la disponibilidad del recurso identificado. Tanto URN (nombres) como URL (localizadores) son los URI, y un URI particular puede ser a la vez un nombre y un localizador al mismo tiempo.
+
+- Un URL es un URI que identifica un recurso y también proporciona los medio para localizar el recurso mediante la descripción de la forma de acceder a el
+- Un  URL es un URI
+- Un URL no es necesariamente un URI
+
 [Fuente](https://medium.com/datadriveninvestor/cookies-vs-local-storage-2f3732c7d977)
 
 [Fuente](https://stackoverflow.com/questions/3220660/local-storage-vs-cookies)
