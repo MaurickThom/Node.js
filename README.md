@@ -361,6 +361,13 @@ Es usado para las conexiones de TCP y UDP
     $ GET /?nombre=daniel HTTP/1.1
 ```
 
+### **Diferencia entre URL y URi**
+
+URI son la siglas de Uniform Resource identifier(Identificador de recursos uniforme).
+URI es el camino para identificar cualquiera de estos puntos de contenido, ya sea una página de texto , un video o un clip de sonido, una imagen fija o animada, o un programa.
+
+Por tanto , una URI es una cadena de caracteres que se utilizan para identificar un nombre o un recurso en internet.
+
 [Fuente](https://medium.com/datadriveninvestor/cookies-vs-local-storage-2f3732c7d977)
 
 [Fuente](https://stackoverflow.com/questions/3220660/local-storage-vs-cookies)
