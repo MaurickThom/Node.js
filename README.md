@@ -358,7 +358,7 @@ Es usado para las conexiones de TCP y UDP
 ```sh
     $ GET / HTTP/1.1
     # OTRO
-    $ GET /?nombre)daniel HTTP/1.1
+    $ GET /?nombre=daniel HTTP/1.1
 ```
 
 [Fuente](https://medium.com/datadriveninvestor/cookies-vs-local-storage-2f3732c7d977)
