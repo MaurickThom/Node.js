@@ -23,5 +23,5 @@ app.get('/',(req,resp) => {
  * Query string
  * Query Params : informacion extra que se le enviara al servidor
  * 
- * Ruta dinámica
+ * CUERPO DE HTTP Y NEGOCIACIÓN DE CONTENIDO 
  */
