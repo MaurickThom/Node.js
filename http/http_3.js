@@ -20,3 +20,13 @@ app.set('view engine','pug')
 })
 .listen(3000,()=>{
 })
+/**
+ * 
+ * Los verbos principales
+ * 
+ *  GET POST PUT PATCH DELETE
+ * 
+ * REST : 
+ * 
+ * ES UN SISTEMA DE REGLAS QUE NOS DICTAN CÓMO DISEÑAR APLCACIONES DISTRIBUIDAS DE FORMA QUE TENGAN CIERTAS CARACTERISTICAS DESEABLES
+ */
