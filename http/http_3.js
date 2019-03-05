@@ -52,5 +52,12 @@ app.set('view engine','pug')
  *      Comúnmente utilizado para CREAR recursos
  *      No es IDEMPOTENTE
  *      Produce efectos secundarios en el servidor
-*      El cuerpo del REQUEST si lleva data
+ *       El cuerpo del REQUEST si lleva data
+ * 
+ * 
+ * El verbo PUT
+ * 
+ * COMÚNMENTE UTILIZADO PARA CREAR Y REEMPLAZAR RECURSOS
+ * SI ES IDEMPOTENTE
+ * EL CUERPO DEL REQUEST SI LLEVA DATA
  */
