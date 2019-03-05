@@ -316,6 +316,69 @@ Las aplicaciones que utilizan esta arquitectura estan basadas en recursos mas no
 
 Esta arquitectura que propone principios que ayudan a que una aplicación web sea estándar .
 
+```javascript
+/**
+ * 
+ * Los verbos principales
+ * 
+ *  GET POST PUT PATCH DELETE
+ * 
+ * REST : 
+ * 
+ * ES UN SISTEMA DE REGLAS QUE NOS DICTAN CÓMO DISEÑAR APLCACIONES DISTRIBUIDAS DE FORMA QUE TENGAN CIERTAS CARACTERISTICAS DESEABLES
+ * 
+ * Tu servicio manipula RECURSOS
+ * 
+ * Los recursos son entregados a los clientes, y estos pueden decirle al servidor que quieren MODIFICARLOS, BORRARLOS ,REEMPLAZARLOS O AGREGAR NUEVOS RECURSOS
+ * 
+ * ¿CÓMO IDENTIFICAR UN RECURSO?
+ * URL : lOCALIZACIÓN DE UN RECURSO EN UNA RED DE COMPUTADORAS
+ * URI : SECUENCIA DE CARACTERES PARA IDENTIFICAR UN RECURSO
+ * 
+ * 
+ * El verbo GET 
+ * 
+ * IDEMPOTENTE : NO IMPORTA CUANDO PEDIDOS DE ESTE VERBO SE HAGA NO PRODUCIRAN NINGUN CAMBIO EN EL SERVIDOR
+ * 
+ *      MISMA OPERACIÓN SIEMPRE OCURRE EN EL SERVIDOR
+ *      NO HAY EFECTOS SECUNDARIOS EN EL SERVIDOR.ES UNA OPERACION READ-ONLY
+ *      EL CUERSO DEL REQUEST NO LLEVA DATA
+ * 
+ * El verbo POST
+ * 
+ *      Comúnmente utilizado para CREAR recursos
+ *      No es IDEMPOTENTE
+ *      Produce efectos secundarios en el servidor
+ *       El cuerpo del REQUEST si lleva data
+ * 
+ * 
+ * El verbo PUT
+ * 
+ * COMÚNMENTE UTILIZADO PARA CREAR Y REEMPLAZAR RECURSOS
+ * SI ES IDEMPOTENTE
+ * EL CUERPO DEL REQUEST SI LLEVA DATA
+ * 
+ * El verbo DELETE
+ * 
+ * USADO PARA BORRAR RECURSOS
+ * SI ES IDEMPOTENTE
+ * LLMAR MÚLTIPLES VECES A DELETE SOBRE UN RECURSO TENDRÁ EL MISMO RESULTADO
+ * EL CUERPO DEL REQUEST NO LLEVA DATA
+ * 
+ * 
+ * El verbo PATCH
+ * 
+ *  VERBO CREADO RECIENTEMENTE.ESTÁ SIENDO ADOPTADO POR LA COMUNIDAD
+ *  NO GARANTIZA SER IDENPOTENTE, PERO PUEDE SERLO
+ *  SE UTILIZA PARA HACER MODIFICACION PARCIALES A RECURSOS
+ *  PUT ES UN REEMPLAZO TOTAL DE UN OBJETO, cON PATCH CAMBIAMOS ALGUNOS ATRIBUTOS
+ * 
+ * El valor de la IDEMPOTENCIA
+ * 
+ * - EL CLIENTE SABE CÓMO REACCIONAR CUANDOI HAY FALLAS EN LA RED
+ */
+```
+
 ### **Rutas**
 
 - Las **rutas** ayudan a definir los accesos a nuestra aplicacion web
