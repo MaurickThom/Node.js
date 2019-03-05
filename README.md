@@ -379,6 +379,15 @@ Esta arquitectura que propone principios que ayudan a que una aplicación web se
  */
 ```
 
+**PRINCIPIOS DE REST :**
+
+- Cliente-Servidor
+    - Esto se refiere para que REST exista deben haber dos actores, un cliente y un servidor que almacene o genere informacion.
+- Stateless
+    - El hecho de que no almacena estado se refiere a que el servidor no almacena información del cliente para servir a los propósitos de la aplicacion.Toda la aplicacion necesaria para hacer funcionar a la aplicación debe provenir del cliente.
+    - Esto significa que los request deben ser autocontenidas, deben proveer la autenticación en caso de ser necesarias,deben contener el tipo de operación que se va a realizar o la información que se debe modificar
+    - Cada mensaje HTTP contine toda la información necesaria para comprender la perición.
+
 ### **Rutas**
 
 - Las **rutas** ayudan a definir los accesos a nuestra aplicacion web
