@@ -404,13 +404,16 @@ Esta arquitectura que propone principios que ayudan a que una aplicación web se
 
 ### **Utilización del middleware**
 
-> *Tambien conocida como lógica de intercambio de información entre aplicaciones, es un software que asiste a una aplicación para interactuar o comunicarse con otras aplicaciones*
+> *Tambien conocida como lógica de intercambio de información entre aplicaciones, es un software que asiste a una aplicación para interactuar o comunicarse con otras aplicaciones*<br>
+> Un middleware es un bloque de código que se ejecuta entre la petición que hace el usuario (request) hasta que la petición llega al servidor.
 
 Express es una infraestructura web de direccionamiento y middleware que tiene una funcionalidad mínima propia : una aplicacion Express es fundamentalmente una seria de llamadas a funciones de middlewar.
 
 Estos son módulos **plug and play** que se puede apilar arbitrariamente en cualquier orden y proveen cierta funcionalidad
 
 Middleware es un software que asiste a una aplicación para interacctuar o comunicarsae con otras aplicaciones, o paquetes de programas, redes,hardware y/o sistemas operativos . De esta forma, se provee una solución que mejora la calidad de servicio, así como la seguridad,el envío de mensajes , la actualizacion del directorio de servicio.
+
+> REST son los principios de arquitectura del software mientras que RESTful son los servicios web que siguen esos principios
 
 ### **Generador de express**
 
