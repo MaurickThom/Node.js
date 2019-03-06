@@ -390,6 +390,7 @@ Esta arquitectura que propone principios que ayudan a que una aplicación web se
     - La comunicación entre el cliente y servidor no existe contexto
 - **Interfaz Uniforme(API estandarizada)**
     - Los recursos se exponen a través de URIs , direcciones http como las que pones en la barra del navegador. Solo deben concentrarse en recursos.
+    - El tipo de contenido es independiente del formato que se entrega
 - **Cacheability**
     - Algunos response puedan ser almacenas en cache
 - **Sistema basado en capas**
@@ -398,7 +399,7 @@ Esta arquitectura que propone principios que ayudan a que una aplicación web se
 
 **Prioriza el uso de hypermedia :**
 
-(HATEOAS o hipermedia como motor del estado de la aplicación) restriccion de la arquitectura de la aplicación REST.Hypermedia as the Engine of application state
+(HATEOAS o hipermedia como motor del estado de la aplicación) restriccion de la arquitectura de la aplicación REST.Hypermedia as the Engine of application state.**Permite navegar por todos los recursos sin tener la documentacion a la mano.Es decir,"autodocumenta" la informacion de navegacion.**
 
 > hypermedia : es un set de métodos o procedimientos para escribir , diseñar o componer componentes que integren soportes tales como : texto,imagen,video,audio,mapas. Permite el dascople de nuestros servicios y fomenta la reutilizacion de nuestros recursos ya definidos.
 
