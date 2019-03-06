@@ -309,7 +309,7 @@ Todas las peticiones web necesitaran de un protocolo . Pero que es un protocolo 
 Para entender que es una API hay que enteneder que s una interface.
 Se puede definir interface como un contrato entre dos partes , el cual una establece las condiciones de la relación, en este caso , la interfaz especifica que métodos , funciones , propiedades , recursos estaran disponibles para ser usados
 
-### **Arquitectura REST**
+### **Arquitectura REST(Restricciones de como se daran las conexiones de dos entidades)**
 
 Tambien conocido como Representational State Transfer ,es una forma de crear APIs.
 Las aplicaciones que utilizan esta arquitectura estan basadas en recursos mas no en acciones , mayormente son las aplicaciones que estan basadas en Cliente - Servidor .
@@ -382,13 +382,18 @@ Esta arquitectura que propone principios que ayudan a que una aplicación web se
 **PRINCIPIOS DE REST :**
 
 - **Cliente-Servidor**
-    - Esto se refiere para que REST exista deben haber dos actores, un cliente y un servidor que almacene o genere informacion.
+    - Esto se refiere para que REST exista deben haber dos actores, un cliente y un servidor que almacene o genere informacion.Sepador de responsabilidades
 - **Stateless**
     - El hecho de que no almacena estado se refiere a que el servidor no almacena información del cliente para servir a los propósitos de la aplicacion.Toda la aplicacion necesaria para hacer funcionar a la aplicación debe provenir del cliente.
     - Esto significa que los request deben ser autocontenidas, deben proveer la autenticación en caso de ser necesarias,deben contener el tipo de operación que se va a realizar o la información que se debe modificar
     - Cada mensaje HTTP contine toda la información necesaria para comprender la perición.
+    - La comunicación entre el cliente y servidor no existe contexto
 - **Interfaz Uniforme**
     - Los recursos se exponen a través de URIs , direcciones http como las que pones en la barra del navegador. Solo deben concentrarse en recursos.
+- **Cacheability**
+    - Algunos response puedan ser almacenas en cache
+- **Sistema basado en capas**
+    - El servidor debe estar compuesto de distintas capas,reponsabilidad unicas,estas capas solo pueden comunicarse con la adyacente
 
 **Prioriza el uso de hypermedia :**
 
@@ -397,6 +402,7 @@ Esta arquitectura que propone principios que ayudan a que una aplicación web se
 > hypermedia : es un set de métodos o procedimientos para escribir , diseñar o componer componentes que integren soportes tales como : texto,imagen,video,audio,mapas. Entonces 
 
 ![REST](https://static.packt-cdn.com/products/9781783287963/graphics/7963OS_02_01.jpg)
+
 ### **Rutas**
 
 - Las **rutas** ayudan a definir los accesos a nuestra aplicacion web
