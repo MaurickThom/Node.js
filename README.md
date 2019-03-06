@@ -382,26 +382,29 @@ Esta arquitectura que propone principios que ayudan a que una aplicación web se
 **PRINCIPIOS DE REST :**
 
 - **Cliente-Servidor**
-    - Esto se refiere para que REST exista deben haber dos actores, un cliente y un servidor que almacene o genere informacion.Sepador de responsabilidades
+    - Esto se refiere para que REST exista deben haber dos actores, un cliente y un servidor que almacene o genere informacion.Separador de responsabilidades
 - **Stateless**
     - El hecho de que no almacena estado se refiere a que el servidor no almacena información del cliente para servir a los propósitos de la aplicacion.Toda la aplicacion necesaria para hacer funcionar a la aplicación debe provenir del cliente.
     - Esto significa que los request deben ser autocontenidas, deben proveer la autenticación en caso de ser necesarias,deben contener el tipo de operación que se va a realizar o la información que se debe modificar
     - Cada mensaje HTTP contine toda la información necesaria para comprender la perición.
     - La comunicación entre el cliente y servidor no existe contexto
-- **Interfaz Uniforme**
+- **Interfaz Uniforme(API estandarizada)**
     - Los recursos se exponen a través de URIs , direcciones http como las que pones en la barra del navegador. Solo deben concentrarse en recursos.
 - **Cacheability**
     - Algunos response puedan ser almacenas en cache
 - **Sistema basado en capas**
-    - El servidor debe estar compuesto de distintas capas,reponsabilidad unicas,estas capas solo pueden comunicarse con la adyacente
+    - El servidor debe estar compuesto de distintas capas,reponsabilidad unicas,estas capas solo pueden comunicarse con la adyacente.
+    - Existencia de capas intermedias para llegar finalmente al servidor.
 
 **Prioriza el uso de hypermedia :**
 
-(HATEOAS o hipermedia como motor del estado de la aplicación) restriccion de la arquitectura de la aplicación REST
+(HATEOAS o hipermedia como motor del estado de la aplicación) restriccion de la arquitectura de la aplicación REST.Hypermedia as the Engine of application state
 
-> hypermedia : es un set de métodos o procedimientos para escribir , diseñar o componer componentes que integren soportes tales como : texto,imagen,video,audio,mapas. Entonces 
+> hypermedia : es un set de métodos o procedimientos para escribir , diseñar o componer componentes que integren soportes tales como : texto,imagen,video,audio,mapas. Permite el dascople de nuestros servicios y fomenta la reutilizacion de nuestros recursos ya definidos.
 
 ![REST](https://static.packt-cdn.com/products/9781783287963/graphics/7963OS_02_01.jpg)
+
+### **Servicio Web**
 
 ### **Rutas**
 
