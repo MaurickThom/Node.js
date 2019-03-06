@@ -406,6 +406,8 @@ Esta arquitectura que propone principios que ayudan a que una aplicación web se
 
 ### **Servicio Web**
 
+Set de protocolos que permite intercambiar informacion entre aplicaciones
+
 ### **Rutas**
 
 - Las **rutas** ayudan a definir los accesos a nuestra aplicacion web
