@@ -394,8 +394,9 @@ Esta arquitectura que propone principios que ayudan a que una aplicación web se
 
 (HATEOAS o hipermedia como motor del estado de la aplicación) restriccion de la arquitectura de la aplicación REST
 
-> hypermedia : es un set de métodos o procedimientos para escribir , diseñar o componer componentes que integren soportes tales como : texto,imagen,video,audio,mapas.
+> hypermedia : es un set de métodos o procedimientos para escribir , diseñar o componer componentes que integren soportes tales como : texto,imagen,video,audio,mapas. Entonces 
 
+![REST](https://static.packt-cdn.com/products/9781783287963/graphics/7963OS_02_01.jpg)
 ### **Rutas**
 
 - Las **rutas** ayudan a definir los accesos a nuestra aplicacion web
