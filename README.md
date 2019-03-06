@@ -401,6 +401,8 @@ Esta arquitectura que propone principios que ayudan a que una aplicación web se
 
 (HATEOAS o hipermedia como motor del estado de la aplicación) restriccion de la arquitectura de la aplicación REST.Hypermedia as the Engine of application state.**Permite navegar por todos los recursos sin tener la documentacion a la mano.Es decir,"autodocumenta" la informacion de navegacion.**
 
+En otras palabras cuando el servidor nos devuelva la representacion de un recurso parte de la información devuelta serán identificadores únicos en forma de hipervinculos a otros recursos asociados.HATEOAS nos permite mostrar las URIs de forma que el cliente este menos acocplado al servidor.
+
 > hypermedia : es un set de métodos o procedimientos para escribir , diseñar o componer componentes que integren soportes tales como : texto,imagen,video,audio,mapas. Permite el dascople de nuestros servicios y fomenta la reutilizacion de nuestros recursos ya definidos.
 
 ![REST](https://static.packt-cdn.com/products/9781783287963/graphics/7963OS_02_01.jpg)
