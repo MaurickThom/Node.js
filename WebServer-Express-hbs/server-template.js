@@ -8,7 +8,11 @@ app.set('view engine','hbs')
 // app.set('view engine','pug')
 .get('/',(request,response)=>{
     response.render('home',{
-        year:new Date().getFullYear()
+        year:new Date().getFullYear(),
+        current:'Home'
     })
+})
+.get('/about',(request,response)=>{
+    response.render('about')
 })
 .listen(3000)
