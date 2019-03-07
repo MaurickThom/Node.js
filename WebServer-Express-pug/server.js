@@ -5,8 +5,9 @@ app.use(express.static(`${__dirname}/public`))
 
 app.set('view engine','pug')
 .get('/',(request,response)=>{
-    response.render('home',{
-        year:new Date().getFullYear()
-    })
+    response.render('home')
+})
+.get('/about',(request,response)=>{
+    response.render('about')
 })
 .listen(port)
