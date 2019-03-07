@@ -1,5 +1,4 @@
 const app = require('./app'),
-    createError = require('http-errors'),
     log = console.log
 
 app.listen(app.get('port'),()=>{
