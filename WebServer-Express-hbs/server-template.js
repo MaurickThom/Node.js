@@ -13,6 +13,8 @@ app.set('view engine','hbs')
     })
 })
 .get('/about',(request,response)=>{
-    response.render('about')
+    response.render('about',{
+        current:'About'
+    })
 })
 .listen(3000)
