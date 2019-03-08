@@ -7,19 +7,10 @@
     <title>{{title}}</title>
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <a href="/">Logo</a>
-        </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="/">Inicio</a></li>
-                <li><a href="/portafolio"></a>Portafolio</li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
-        </nav>
-    </header>
+    {{> header}}
+    <main class='main'>
+        {{body}}
+    </main>
+    {{> footer}}
 </body>
 </html>

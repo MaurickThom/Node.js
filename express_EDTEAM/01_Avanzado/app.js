@@ -11,6 +11,7 @@ const express = require('express'),
     routes = require('./routes/index'),
     app = express()
 
+hbs.registerPartials(`${__dirname}/views/parcials`)
 app
     .set('port', (process.env.PORT || 3000))
     .set('views',`${__dirname}/views`)
