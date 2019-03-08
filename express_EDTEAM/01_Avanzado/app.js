@@ -26,6 +26,21 @@ app
         saveUninitialized:true
     }))
     .use(sassMiddleware({
-        src:''
+        src:`${__dirname}/public`, // archivo prinvipal donde estara transpilando
+        dest:`${__dirname}/public`,// destino de la transpilacion
+        indentedSyntax: false ,// true=.sass , false=.scss
+        sourceMap:true,
+        outputStyle: 'compressed' 
     }))
+    .use(browserify_express({
+        entry:`${__dirname}/public`,
+        watch:`${__dirname}/public/js/`,
+        mount:'/js/script.js',
+        verbouse:true,
+        minify:true,
+        bundle_opst:{debugg:true}
+    }))
+    .use(express.static(`${__dirname}/public`))
+    .use(routes)
+    .use((request,response,next)=>next(createError(404)))
 module.exports = app
