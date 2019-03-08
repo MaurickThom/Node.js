@@ -41,6 +41,10 @@ app
         bundle_opst:{debugg:true}
     }))
     .use(express.static(`${__dirname}/public`))
-    .use(routes)
+    .use(routes) 
     .use((request,response,next)=>next(createError(404)))
+    .use((err,request,response,next)=>{
+        response.status(err.status || 500)
+        response.render('error',{err})
+    })
 module.exports = app
