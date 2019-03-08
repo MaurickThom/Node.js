@@ -10,7 +10,7 @@ const expressSession = require('express-session'),
     express=require('express'),
     app = express(),
     MongoStore = require('connect-mongo')(expressSession),
-    MONGO_URL = 'mondodb://localhost:27017/auth'
+    MONGO_URL = 'mongodb://localhost:27017/auth'
 
 
 
