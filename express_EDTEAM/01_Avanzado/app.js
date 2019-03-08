@@ -2,7 +2,7 @@ const express = require('express'),
     createError = require('http-errors'),
     logger = require('morgan'),
     favicon=require('serve-favicon'),
-    cookieParser  = require('cookie-parse'),
+    cookieParser  = require('cookie-parser'),
     session=require('express-session'),
     sassMiddleware = require('node-sass-middleware'),
     browserify_express = require('babelify-express'),
@@ -16,7 +16,7 @@ app
     .set('port', (process.env.PORT || 3000))
     .set('views',`${__dirname}/views`)
     .set('view_engine','hbs')
-    .use(favicon(`${__dirname}/public/img/favicon.io`))
+    .use(favicon(`${__dirname}/public/img/favicon.png`))
     .use(logger('dev'))
     .use(express.json())
     .use(express.urlencoded({extended:false}))
@@ -34,7 +34,7 @@ app
         outputStyle: 'compressed' 
     }))
     .use(browserify_express({
-        entry:`${__dirname}/public`,
+        entry:`${__dirname}/public/js/index.js`,
         watch:`${__dirname}/public/js/`,
         mount:'/js/script.js',
         verbouse:true,
