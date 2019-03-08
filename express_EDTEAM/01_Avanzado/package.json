@@ -6,8 +6,7 @@
   "scripts": {
     "start": "nodemon -e hbs server.js"
   },
-  "author": "Jonathan MirCha <jonmircha@gmail.com>",
-  "license": "MIT",
+  "author": "THom Maurick <thomtwd@gmail.com>",
   "dependencies": {
     "babelify-express": "^0.1.7",
     "cookie-parser": "^1.4.3",
