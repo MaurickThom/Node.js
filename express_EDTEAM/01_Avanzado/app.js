@@ -13,7 +13,7 @@ const express = require('express'),
   app = express()
 
 hbs.registerPartials(`${__dirname}/views/partials`)
-
+hbs.registerHelper('year',_=>new Date().getFullYear())
 app
   .set('views', `${__dirname}/views`)
   .set('view engine', 'hbs')
