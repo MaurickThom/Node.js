@@ -10,5 +10,17 @@ app.use(express.static(`${__dirname}/public`))
         response.render('index',{images})
     })
 const getDataForPage = async _=>{
-    
+    let pics = ['1','2','3']
+    let responsePromises = []
+
+    let responsePromise
+
+    pics.forEach(picID=>{
+        responsePromise = request.get({
+            uri:``,
+            encoding:null,
+            resolveWithFullResponse:true
+        })
+        responsePromises.push(responsePromise)
+    })
 }
