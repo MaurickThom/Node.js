@@ -7,3 +7,10 @@ const mongoose = require('mongoose'),
     },{
         timestamps:true // mongoose agreagar atributros aparte de los que hemos declarado a nuestra base de datos en las cuales indicara cuando el usuario fue creado y cuando fue actualizado
     })
+
+userSchema.pre('save',function(next){ // ejecutara justo antes de guardas los objetos
+    const user = this
+
+    if(!user.isModified('password')) return next()
+
+})
