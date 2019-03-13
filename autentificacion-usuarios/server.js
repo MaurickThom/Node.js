@@ -6,7 +6,7 @@ const express = require('express'),
     mongoose = require('mongoose'), // permite modelar la informacion de cada usuario , como  correo , contraseña , perfil
     User = require('./model/User'),
     newUser = new User({
-        email:'thomtwd@gmial.com',
+        email:'thomtwd@gmail.com',
         name:'Thom',
         password:'123456'
     })
@@ -18,9 +18,9 @@ mongoose.connection.on('error',err=>{
     process.exit(1)
 })
 
-newUser.save()
-    .then(_=>console.log('Guardado'))
-    .catch(err=>console.log(err))
+// newUser.save()
+//     .then(_=>console.log('Guardado'))
+//     .catch(err=>console.log(err))
 
 app
     .use(session({
