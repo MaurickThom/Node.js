@@ -1,5 +1,6 @@
 const mongoose = require('mongoose'),
     Schema = mongoose.Schema, // representa la información y las propiedades que van a estar en un objeto de tipo user
+    bcrypt = require('bcrypt-nodejs'), 
     userSchema = new Schema({
         email:{type:String,unique:true,lowercase:true,required:true},
         password : {type:String,required:true},
@@ -13,4 +14,28 @@ userSchema.pre('save',function(next){ // ejecutara justo antes de guardas los ob
 
     if(!user.isModified('password')) return next()
 
+    bcrypt.genSalt(10,(err,salt)=>{
+        if(err) next(err)
+        bcrypt.hash(user.password,salt,null,(err,hash)=>{
+            if(err) next(err)
+            user.password=hash
+            next()
+        })
+    })
 })
+
+// Sal(en ingles salt) (criptografia)
+
+/**
+ * 
+ */
+
+
+userSchema.methods.comparePassword = function(password,callback){
+    bcrypt.compare(password,this.password,(err,theyAreEquals)=>{
+        if(err) return callback(err)
+        callback(null,theyAreEquals)
+    })
+}
+
+module.exports = mongoose.model('Usuario',userSchema)
