@@ -306,8 +306,10 @@ Todas las peticiones web necesitaran de un protocolo . Pero que es un protocolo 
 
 ### **¿Que es un API?**
 
-Para entender que es una API hay que enteneder que s una interface.
-Se puede definir interface como un contrato entre dos partes , el cual una establece las condiciones de la relación, en este caso , la interfaz especifica que métodos , funciones , propiedades , recursos estaran disponibles para ser usados
+Para entender que es una API hay que entender que Es una interface.
+Se puede definir interface como un contrato entre dos partes , el cual una establece las condiciones de la relación, en este caso , la interfaz especifica que métodos , funciones , propiedades , recursos estaran disponibles para ser usados.
+
+Por ejemplo, cuando el usuario compra entradas a través de la página web de una sala de cine e introduce la información de su tarjeta de crédito, la web usa una API para enviar dicha información de forma remota a otro programa que verifica si los datos bancarios son correctos. Una vez que se confirma el pago, la aplicación remota envía la información al sitio web del cine y le da un «OK», por lo que esta página emite los tickets.
 
 ### **Arquitectura REST(Restricciones de como se daran las conexiones de dos entidades)**
 
