@@ -311,6 +311,12 @@ Se puede definir interface como un contrato entre dos partes , el cual una estab
 
 Por ejemplo, cuando el usuario compra entradas a través de la página web de una sala de cine e introduce la información de su tarjeta de crédito, la web usa una API para enviar dicha información de forma remota a otro programa que verifica si los datos bancarios son correctos. Una vez que se confirma el pago, la aplicación remota envía la información al sitio web del cine y le da un «OK», por lo que esta página emite los tickets.
 
+```javascript
+    let coderos = {
+        api:"Las apis son un medio de comunicacion entre una aplicacion y el mundo exterior"
+    }
+```
+
 ### **Arquitectura REST(Restricciones de como se daran las conexiones de dos entidades)**
 
 Tambien conocido como Representational State Transfer ,es una forma de crear APIs.
