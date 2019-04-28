@@ -6,11 +6,13 @@ oracledb.getConnection({
 },
 (err,connection)=>{
     if(err) return console.log(err.message)
-    connection.execute('SELECT * FROM employees',
-    [],
+    connection.execute(`SELECT manager_id, department_id, department_name
+    FROM departments
+    WHERE manager_id = :id`,
+   [103],
     (err,result)=>{
         if(err){
-            console.err(err.message)
+            console.error(err.message)
             doRelease(connection)
             return
         }
