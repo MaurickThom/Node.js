@@ -1,24 +1,20 @@
 let oracledb = require('oracledb')
 oracledb.getConnection({
-    user:'HR',
-    password:'HR',
-    port:'1521',
+    user:'hr',
+    password:'hr',
     connectString:'localhost/xe'
 },
 (err,connection)=>{
     if(err) return console.log(err.message)
     connection.execute('SELECT * FROM employees',
     [],
-    {
-        maxRows:1
-    },
     (err,result)=>{
         if(err){
             console.err(err.message)
             doRelease(connection)
             return
         }
-        console.log(result.now)
+        console.log(result.rows)
         doRelease(connection)
     });
 });
