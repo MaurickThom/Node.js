@@ -1,4 +1,8 @@
 let oracledb = require('oracledb')
+let sql = `SELECT * FROM departments`
+// `SELECT manager_id, department_id, department_name
+//     FROM departments
+//     WHERE manager_id = :id`
 oracledb.getConnection({
     user:'hr',
     password:'hr',
@@ -6,10 +10,8 @@ oracledb.getConnection({
 },
 (err,connection)=>{
     if(err) return console.log(err.message)
-    connection.execute(`SELECT manager_id, department_id, department_name
-    FROM departments
-    WHERE manager_id = :id`,
-   [103],
+    connection.execute(sql,
+//    [103],
     (err,result)=>{
         if(err){
             console.error(err.message)
