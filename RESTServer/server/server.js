@@ -1,7 +1,8 @@
-const express = require('express')
-const app = express()
+const express = require('express'),
+    app = express(),
+    port = process.env.PORT || 8000
 
 app.get('/',(request,response)=>{
     
 })
-.listen(8000,()=>console.log('Escuchando en el puerto 8000'))
+.listen(port,()=>console.log(`Escuchando en el puerto ${port}`))
