@@ -14,12 +14,15 @@ app.use(express.json())
 .post('/usuario',(req,res)=>{
     let body = req.body
     if(body.nombre ===undefined) {
-        res.status(2)
-        return
+        console.log('Entre')
+        res.status(204)
+        res.json('nel perro')
+    }else{
+        
+        res.json({
+            body
+        })
     }
-    res.json({
-        body
-    })
 })
 .put('/usuario/:id',(req,res)=>{
     res.json('Put user '+req.params.id)
