@@ -13,7 +13,7 @@ app.use(express.json())
 })
 .post('/usuario',(req,res)=>{
     let body = req.body
-    if(body.nombre ===undefined) {
+    if(body.nombre ===undefined) {  
         console.log('Entre')
         res.status(400)
         res.json(`NELL perro status ${res.statusCode}`)
