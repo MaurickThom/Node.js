@@ -499,6 +499,23 @@ Es la manera en la cual nuestra aplicacion actua a una accion del usuario,
 esta accion puede ser una solicitud de todos los verbos que existen en el 
 protocolo HTTP
 
+```javascript
+    app.METHOD(PATH,HANDLER)
+
+    /**
+     * app es una instacia de express
+     * METHOD es el verbo de solicitud HTTP
+     * PATH es una via de acceso en el servidor
+     * HANDLER es la funcion que se ejeta cuando se correlaciona la ruta
+    */
+```
+
+Detengamonos un momento y definamos que un `HANDLER` , un `HANDLER` como 
+su nombre en ingles lo mensiona es un `manejador`.
+
+[REFERENCIAS SOBRE DIRECCIONAMIENTO BÁSICO](https://expressjs.com/es/starter/basic-routing.html)
+
+
 ```python
     # Autor : Thom Maurick Roman Aguilar
     # Estudiante de la carrera Ingeniería de sistemas
