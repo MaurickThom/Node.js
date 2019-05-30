@@ -1,7 +1,11 @@
 const express = require('express')
 const app = express()
+// Middleware que nos permitira filtrar cualquier tipo de peticion
+// instruccion o callback que se ejecutara siempre no importa de lo que el usuario pida
 
-app.get('/',(req,res)=>{
+app.use(express.static(`${__dirname}/public`))
+
+app.get('/service',(req,res)=>{
     let salida = {
         name:'Thom',
         url:req.url

@@ -3,6 +3,7 @@ let sql = `SELECT * FROM departments`
 // `SELECT manager_id, department_id, department_name
 //     FROM departments
 //     WHERE manager_id = :id`
+
 oracledb.getConnection({
     user:'hr',
     password:'hr',

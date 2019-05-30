@@ -493,6 +493,10 @@ En conclusión, si el URL describe tanto la ubicación y el nombre de un recurso
 
 [Fuente](https://stackoverflow.com/questions/3220660/local-storage-vs-cookies)
 
+## **Direccionamiento básico**
+
+.
+
 ```python
     # Autor : Thom Maurick Roman Aguilar
     # Estudiante de la carrera Ingeniería de sistemas
