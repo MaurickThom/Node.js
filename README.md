@@ -495,7 +495,9 @@ En conclusión, si el URL describe tanto la ubicación y el nombre de un recurso
 
 ## **Direccionamiento básico**
 
-.
+Es la manera en la cual nuestra aplicacion actua a una accion del usuario,
+esta accion puede ser una solicitud de todos los verbos que existen en el 
+protocolo HTTP
 
 ```python
     # Autor : Thom Maurick Roman Aguilar
