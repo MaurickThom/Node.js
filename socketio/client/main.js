@@ -7,7 +7,9 @@ const render = data=>{
             <p>${message.text}</p>
         </div>
     `).join(' ')
-    document.getElementById('messages').innerHTML= html
+    let divMsgs = document.getElementById('messages')
+    divMsgs.innerHTML= html
+    divMsgs.scrollTop = divMsgs
 }
 socket.on('messages',data=>render(data));
 const executeEvent = id =>{
@@ -17,6 +19,7 @@ const executeEvent = id =>{
             nickname:document.getElementById('nickname').value,
             text:document.getElementById('text').value
         }
+        
         document.getElementById('nickname').style.display='none'
         socket.emit('add-message',message)
     })
