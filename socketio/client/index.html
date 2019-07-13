@@ -6,32 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     
-    <style>
-        #messages{
-            width: 95%;
-            max-width: 400px;
-            height: 350px;
-            overflow-y: auto;
-            border: 1px solid #eee;
-            box-shadow: 0 0 20px #ccc inset;
-        }
-        .message{
-            margin: 1em;
-            padding: .5em;
-            border-radius: .5em;
-            border: 1px solid #ccc;
-            background-color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Socket.io</h1>
-    <div id="messages"></div>
-    <form action="" id=form>
-        <input type="text" id=nickname placeholder="Nick">
-        <textarea name="" cols="30" rows="1" id=text placeholder="Message"></textarea>
-        <input type="submit" value="Enviar" id="input-botton">
-    </form>
+    <main class=form-container>
+
+        <h1>Socket.io</h1>
+        <div id="messages"></div>
+        <form action="" id=form>
+            <input type="text" id=nickname placeholder="Nick">
+            <textarea name="" cols="30" rows="1" id=text placeholder="Message"></textarea>
+            <input type="submit" value="Enviar" id="input-botton">
+        </form>
+    </main>
     <script src="/socket.io/socket.io.js"></script>
     <script src="main.js"></script>
 </body>
