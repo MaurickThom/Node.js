@@ -9,7 +9,7 @@ const render = data=>{
     `).join(' ')
     let divMsgs = document.getElementById('messages')
     divMsgs.innerHTML= html
-    divMsgs.scrollTop = divMsgs
+    divMsgs.scrollTop = divMsgs.scrollHeight
 }
 socket.on('messages',data=>render(data));
 const executeEvent = id =>{
