@@ -9,7 +9,7 @@
   "author": "Thom Maurick",
   "license": "ISC",
   "devDependencies": {
-    "node-fetch": "^2.3.0",
+    "node-fetch": "^2.6.1",
     "nodemon": "^1.18.10",
     "yargs": "^13.1.0"
   }
